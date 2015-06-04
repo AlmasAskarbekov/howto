@@ -1,0 +1,4 @@
+$ yaourt -S imagemagick
+$ find ~/tmp/ -iregex '.*.jpg' -exec convert '{}' -quality 95 jpg:'{}' \;
+$ find ~/tmp/ -iregex '.*.jpg' -exec convert '{}' -resize 120% jpg:'{}' \;
+$ find ~/tmp/ -iregex '.*.jpg' -exec convert '{}' -flop jpg:'{}' \;
