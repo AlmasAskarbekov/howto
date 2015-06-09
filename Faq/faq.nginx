@@ -10,11 +10,11 @@ OK, successfully used password, moving on...
 Setting the root password ensures that nobody can log into the MariaDB
 root user without the proper authorisation.
 
-Set root password? [Y/n] [Enter]
-Remove anonymous users? [Y/n] [Enter]
-Disallow root login remotely? [Y/n] n [Enter]
-Remove test database and access to it? [Y/n] [Enter]
-Reload privilege tables now? [Y/n] [Enter]
+Set root password? [Y/n] y [Enter]
+Remove anonymous users? [Y/n] y [Enter]
+Disallow root login remotely? [Y/n] y [Enter]
+Remove test database and access to it? [Y/n] y [Enter]
+Reload privilege tables now? [Y/n] y [Enter]
 
 $ sudo systemctl restart mysqld 
 $ sudo systemctl enable mysqld
@@ -126,16 +126,6 @@ $ sudo gedit /etc/nginx/nginx.conf
 
 $ sudo ln -sr /etc/nginx/sites-available/site.conf /etc/nginx/sites-enabled/
 $ sudo ln -sr /etc/nginx/sites-available/phpmyadmin.conf /etc/nginx/sites-enabled/
-
-$ sudo chmod 755 /home
-$ chmod 755 ~/
-$ chmod 755 ~/Projects
-$ chmod 755 ~/Projects/www
-
-$ chmod 755 ~/Projects/www/site.ru
-$ find ~/Projects/www/site.ru -type f -print0 | xargs -0 chmod 644
-$ find ~/Projects/www/site.ru -type d -print0 | xargs -0 chmod 775
-$ sudo chown -R user:http ~/Projects/www/site.ru
 
 -------------------Настройка localhost
 $ sudo gedit /etc/hosts

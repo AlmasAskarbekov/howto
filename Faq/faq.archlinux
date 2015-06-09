@@ -478,4 +478,8 @@ $ sudo systemctl enable NetworkManager-wait-online.service
 -------------------------------------------------------------------
 $ yaourt -S inxi
 inxi -v4 -c6 OR inxi -bDc 6
+-------------------------------------------------------------------
+sftp://archie@5.34.183.62:2525/home/archie
+ftp://pfr5435082-exp@ftp.pswebshop.com/
+davs://ya.rus.36%40yandex.ru@webdav.yandex.ru/
 

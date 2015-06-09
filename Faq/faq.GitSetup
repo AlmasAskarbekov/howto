@@ -1,3 +1,13 @@
+$ git init
+$ git add .
+$ git commit -m "first commit"
+$ git remote add origin https://github.com/4exob/howto.git
+$ git push -u origin master
+$ git st
+$ git hist
+* 9f674de 2015-06-04 | first commit (HEAD -> master, origin/master)...
+
+----------------------------------------------------------------------------------------------------------------------
 $ cd ~/Projects
 $ git clone https://github.com/4exob/howto.git howto
 
@@ -12,18 +22,7 @@ $ git push -u origin master
 $ cd ~/Projects/hello.git
 $ git remote add shared https://github.com/4exob/hello.git
 $ git push shared master
-----------------------------------------------------------------------------------------------------------------------
-> СОЗДАНИЕ ПРОЕКТА
 
-$ cd  ~/Projects/hello
-$ git init
-
-> Вносим изминения
-$ touch hello.html
-
-> Редактируем
-$ git add hello.html
-$ git commit -m "First Commit"
 ----------------------------------------------------------------------------------------------------------------------
 > Разделяя индексацию и коммит, вы имеете возможность с легкостью
 настроить, что идет в какой коммит.
