@@ -1,0 +1,51 @@
+$ yaourt -S imagemagick
+
+-----------------Задаем качество выходного изображения
+$ find ~/tmp/ -iregex '.*.jpg' -exec convert '{}' -quality 95 jpg:'{}' \;
+
+-----------------Изменяем размер изображения
+$ find ~/tmp/ -iregex '.*.jpg' -exec convert '{}' -resize 120% jpg:'{}' \;
+
+-----------------Отражаем по горизонтали
+$ find ~/tmp/ -iregex '.*.jpg' -exec convert '{}' -flop jpg:'{}' \;
+
+-----------------
+
+
+-----------------
+
+
+-----------------Объединяем вертикально. Сверху-вниз
+$ convert -append kitch2.jpg kitch16.jpg kitch18.jpg kitchen.jpg
+
+-----------------Объединяем горизонтально. Справа-налево
+$ convert +append kitchdsv21.jpg kitchdsv210.jpg kitchen1.jpg
+
+
+-----------------tmp
+bts
+dsv
+gorizont
+
+bedroom
+fiesta_1->
+$ find . -iregex '.*.jpg' -exec convert '{}' -resize x1000 jpg:'{}' \;
+$ convert +append sakura_1.jpg modern_1.jpg fiesta41.jpg
+$ convert +append nikol_1.jpg lilya_1.jpg fiesta42.jpg
+$ find . -iregex '.*.jpg' -exec convert '{}' -resize 1000 jpg:'{}' \;
+$ convert -append fiesta41.jpg fiesta42.jpg fiesta44.jpg
+
+$ find . -iregex '.*.jpg' -exec convert '{}' -resize 1000 jpg:'{}' \;
+$ convert -append sakura_1.jpg nikol_1.jpg fiesta41.jpg
+$ convert -append modern_1.jpg lilya_1.jpg fiesta42.jpg
+$ find . -iregex '.*.jpg' -exec convert '{}' -resize x1000 jpg:'{}' \;
+$ convert +append fiesta41.jpg fiesta42.jpg fiesta44.jpg
+
+kitchen
+
+
+wall {}{}
+
+-
+
++
