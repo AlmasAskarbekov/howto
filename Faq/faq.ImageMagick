@@ -3,14 +3,14 @@ $ yaourt -S imagemagick
 -----------------Задаем качество выходного изображения
 $ find . -iregex '.*.jpg' -exec convert '{}' -quality 95 jpg:'{}' \;
 
------------------Изменяем размер изображения
-$ find . -iregex '.*.jpg' -exec convert '{}' -resize 120% jpg:'{}' \;
-
 -----------------Отражаем по горизонтали
 $ find . -iregex '.*.jpg' -exec convert '{}' -flop jpg:'{}' \;
 
------------------2х2
+-----------------Изменяем размер изображения
+$ find . -iregex '.*.jpg' -exec convert '{}' -resize 120% jpg:'{}' \;
+
+-----------------2х2=4
 $ montage *.jpg -tile 2x2 -geometry 300x200\!+0+0 out.jpg
 
-
-$ n=0; for i in `find . -type f`; do let "n = $n + 1"; mv "$i" "test_$n.jpg";done
+-----------------переименовать
+$ n=0; for i in `find ~/Загрузки/import -type f`; do let "n = $n + 1"; mv "$i" "`dirname "$i"`/test_$n.jpg";done
