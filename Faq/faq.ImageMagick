@@ -1,15 +1,12 @@
 $ yaourt -S imagemagick
 
 -----------------Задаем качество выходного изображения
-$ find . -iregex '.*.jpg' -exec convert '{}' -quality 95 jpg:'{}' \;
 $ find . -iregex '.*.jpg' -exec convert -quality 95 {} {} \;
 
 -----------------Отражаем по горизонтали
-$ find . -iregex '.*.jpg' -exec convert '{}' -flop jpg:'{}' \;
 $ find . -iregex '.*.jpg' -exec convert -flop {} {} \;
 
 -----------------Изменяем размер изображения
-$ find . -iregex '.*.jpg' -exec convert '{}' -resize 120% jpg:'{}' \;
 $ find . -iregex '.*.jpg' -exec convert -resize 120% {} {} \;
 
 -----------------2х2=4
@@ -19,25 +16,24 @@ $ montage *.jpg -tile 1 -geometry 1200\!+0 flora.jpg /*вертикально
 $ montage *.jpg -tile 2 -geometry 1200\!+0 flora.jpg /*горизонтально
 
 -----------------изменить размер по вертикали с сохранением пропорций по горизонтали
-$ find . -iregex '.*.jpg' -exec mogrify '{}' -resize x1000 jpg:'{}' \;
 $ find . -iregex '.*.jpg' -exec mogrify -resize x1000 {} {} \;
 
 -----------------переименовать
 $ n=0; for i in `find ~/Загрузки/import -type f`; do let "n = $n + 1"; mv "$i" "`dirname "$i"`/test_$n.jpg";done
 
 -----------------WaterMark
-$ convert -background '#f04040' -fill white -font Sony-Sketch-EF -pointsize 200 label:' stock-price ' sp.png
-$ composite -resize '1x1<' -dissolve 99% -gravity center sp.png 958.jpg output1.jpg
+$ find . -iregex '.*.jpg' -exec mogrify -resize x1000 {} {} \;
+
+$ find . -iregex '.*.jpg' -exec convert -fill "#ffffffb0" -box '#f0404080' -font Sony-Sketch-EF -gravity South -pointsize 50 -annotate +0+10 ' stock-price.ru ' {} {} \;
+
+или c файлом wm.png
+$ convert -background '#f04040' -fill white -font Sony-Sketch-EF -pointsize 50 label:' stock-price.ru ' wm.png
+$ find . -iregex '.*.jpg' -exec composite -dissolve 50% -gravity South ~/wm.png {} {} \;
 
 
 
-$ width=`identify -format %w 936.jpg`; \
-> convert -background '#f04040' -fill white -gravity center -size ${width}x30 \
-> caption:" СТОК-ПРАЙС " \
-> 936.jpg +swap -gravity south -composite 111.jpg
 
-
-composite -watermark 30 -gravity center 991.jpg 958.jpg output.jpg
+####################################################
 
 
 
@@ -50,14 +46,4 @@ $ find . -iregex '.*.jpg' -exec identify '{}' -format "%G" \;
 
 -----------------найти фото больше определенного размера в мб и пережать?
 find -iname '*.jpg' -size +1M -exec mogrify -geometry 50%x50% {} \;
-
-$ find . -iregex '.*.jpg' -exec convert -resize '3000x1000^' -gravity center -crop 3000x1000+0+0  {} {} \;
-
-$ find . -name '*.jpg' -exec mogrify -resize 800x600 -quality 75 {} \;
-
-$ find . -iregex '.*.jpg' -exec convert -geometry x2250 -gravity center -crop 3000x2250+0+0  {} {} \;
-
-$ find . -iregex '.*.jpg' -exec convert -geometry x2250 -crop 3000x2250+0+0  {} {} \;
-
-$ find . -iregex '.*.jpg' -exec mogrify -resize x1000 -gravity center -crop 1800x1000+0+0 {} {} \;
 
