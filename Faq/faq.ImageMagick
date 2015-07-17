@@ -9,14 +9,17 @@ $ find . -iregex '.*.jpg' -exec convert -flop {} {} \;
 -----------------Изменяем размер изображения
 $ find . -iregex '.*.jpg' -exec convert -resize 120% {} {} \;
 
+-----------------изменить размер по вертикали с сохранением пропорций по горизонтали
+$ find . -iregex '.*.jpg' -exec mogrify -resize x1000 {} {} \;
+
+-----------------изменить размер по вертикали с сохранением пропорций картинок меньше 857
+$ find . -iregex '.*.jpg' -exec mogrify -resize 'x857<' {} {} \;
+
 -----------------2х2=4
 $ montage *.jpg -tile 2x2 -geometry 300x200\!+0+0 out.jpg
 
-$ montage *.jpg -tile 1 -geometry 1200\!+0 flora.jpg /*вертикально
-$ montage *.jpg -tile 2 -geometry 1200\!+0 flora.jpg /*горизонтально
-
------------------изменить размер по вертикали с сохранением пропорций по горизонтали
-$ find . -iregex '.*.jpg' -exec mogrify -resize x1000 {} {} \;
+$ montage *.jpg -tile 1 -geometry \!+0 flora.jpg /*вертикально
+$ montage *.jpg -tile 2 -geometry \!+0 flora.jpg /*горизонтально
 
 -----------------переименовать
 $ n=0; for i in `find ~/Загрузки/import -type f`; do let "n = $n + 1"; mv "$i" "`dirname "$i"`/test_$n.jpg";done
@@ -35,11 +38,6 @@ $ find . -iregex '.*.jpg' -exec composite -dissolve 50% -gravity South ~/wm.png 
 
 ####################################################
 
-
-
-
------------------конвертируют с сохранением пропорций файлы любых типов, которые понимает imagemagick и которые находятся в текущем каталоге, и пишет их туда же, добавляя к имени файла _thumb и заменяя по необходимости расширение на .jpg
-$ convert -geometry '1024x768>' -quality 85 "$file" "${file%.???}_thumb.jpg"
 
 -----------------отображает информацию о размере файла
 $ find . -iregex '.*.jpg' -exec identify '{}' -format "%G" \;
