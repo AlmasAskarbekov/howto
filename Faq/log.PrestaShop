@@ -184,11 +184,11 @@ $ mysql -u root -p
             Высота:2000
             Метод генерации:Высота
 
-4. М.[Watermark]
-            Watermark transparency (1-100):20
-            Watermark X align:left
-            Watermark Y align:bottom
-            Choose image types .. :thickbox_default (800 x 2000)
+4. М.[Watermark] (convert -background '#f04040' -fill white -font Sony-Sketch-EF -pointsize 75 label:' stock-price.ru ' wm.gif)
+            Watermark transparency (1-100): 35
+            Watermark X align: середина
+            Watermark Y align: низ
+            Choose image types .. : thickbox_default (900 x 1200)
 
 5. НАСТРОЙКИ =Товары =СТРАНИЦА ТОВАРА
             Показывать количество товара:НЕТ

@@ -34,7 +34,7 @@ $ convert -background '#f04040' -fill white -font Sony-Sketch-EF -pointsize 50 l
 $ find . -iregex '.*.jpg' -exec composite -dissolve 50% -gravity South ~/wm.png {} {} \;
 
 
-
+$ convert -rotate '-4' logo1.jpg logo.png
 
 ####################################################
 
