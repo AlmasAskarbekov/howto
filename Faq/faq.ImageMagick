@@ -30,14 +30,21 @@ $ find . -iregex '.*.jpg' -exec mogrify -resize x1000 {} {} \;
 $ find . -iregex '.*.jpg' -exec convert -fill "#ffffffb0" -box '#f0404080' -font Sony-Sketch-EF -gravity South -pointsize 50 -annotate +0+10 ' stock-price.ru ' {} {} \;
 
 или c файлом wm.png
-$ convert -background '#f04040' -fill white -font Sony-Sketch-EF -pointsize 50 label:' stock-price.ru ' wm.png
+$ convert -background '#f04040' -fill white -font Sony-Sketch-EF -pointsize 50 label:' stock-price.ru ' wm.png /*logo.jpg*/
 $ find . -iregex '.*.jpg' -exec composite -dissolve 50% -gravity South ~/wm.png {} {} \;
 
+-----------------Логотип для Магазина
+$ convert -background '#f13340' -fill white -font Impact -pointsize 75 label:' stock-price.ru ' wm.jpg
+$ convert -rotate '-4' wm.jpg wm.png
 
-$ convert -rotate '-4' logo1.jpg logo.png
+-----------------Картинка для меню
+$ convert -background '#f13340' -fill white -font Impact -pointsize 103 label:' ТАКИХ ЦЕН ВЫ НЕ ВИДЕЛИ ' thumb1.jpg
+$ convert -background '#00cc66' -fill white -font Impact -pointsize 103 label:' ОТЛИЧНЫЕ КУХНИ ТУТ ' thumb2.jpg
+$ convert -background '#fe9126' -fill white -font Impact -pointsize 103 label:' ДОСТУПНЫЕ СПАЛЬНИ ' thumb3.jpg
+$ convert -background '#6ad4ff' -fill white -font Impact -pointsize 103 label:' МЕБЕЛЬ ДЛЯ ДЕТСКОЙ ' thumb4.jpg
+
 
 ####################################################
-
 
 -----------------отображает информацию о размере файла
 $ find . -iregex '.*.jpg' -exec identify '{}' -format "%G" \;
