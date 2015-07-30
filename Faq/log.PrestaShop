@@ -1,4 +1,5 @@
 ---------------------------------[ НАСТРОЙКА СЕРВЕРА ]--------------------------
+
 p.s. Параметры сети (Вам ее нужно будет настроить вручную):
 ip 0.00.000.62
 netmask 255.255.255.0
@@ -16,7 +17,9 @@ dns 8.8.4.4
 
 $ df -h свободное место на диске
 $ fdisk -l
+
 -------------------------------[ Поднимаем сеть ]-------------------------------
+
 $ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default 
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -64,6 +67,7 @@ $ sudo systemctl enable network@stock_eth0.service
 $ sudo systemctl start network@stock_eth0.service
 
 -------------------------------[ Настраиваем ssh ]------------------------------
+
 $ sudo nano /etc/ssh/ssh_config
 ...
 Port 22
@@ -102,6 +106,7 @@ $ rm ~/.ssh/known_hosts
 $ ssh -p 2525 archie@0.00.000.62
 
 -------------------------------[ Настраиваем php mail ]-------------------------
+
 https://www.digitalocean.com/community/tutorials/how-to-setup-exim-spamassassin-clamd-and-dovecot-on-an-arch-linux-vps
 
 $ yaourt -S exim
@@ -127,6 +132,7 @@ $ sudo systemctl start exim
 $ sudo tail /var/log/exim/mainlog
 
 ------------------------------------[ Создаем Базу ]----------------------------
+
 $ mysql -u root -p
 ]> CREATE DATABASE zero45;
 ]> CREATE DATABASE demo45;
@@ -139,6 +145,7 @@ $ mysql -u root -p
 ]> quit;
 
 -------------------------------------[ Подготовка ]-----------------------------
+
 1.$ cd ~/download/psver
   $ wget http://www.prestashop.com/download/prestashop_p.s.v.e.r.zip
   $ unzip prestashop_p.s.v.e.r.zip
@@ -174,6 +181,7 @@ $ mysql -u root -p
    $ rm -rf ~/www/site.ru/install
 
 -------------------------------------[ До импорта ]-----------------------------
+
 1. М.[Очистка PrestaShop eng.PSCLEANER]
 
 2. Характеристики продукта: Ширина width, Высота height, Глубина depth
@@ -226,7 +234,29 @@ $ mysql -u root -p
 12. ЛОКАЛИЗАЦИЯ =Валюты =Десятичные:НЕТ [Округление]
                 =Налоги =Разрешить НДС:НЕТ [Отключаем НДС]
 
+-----------------------[ Расширяем кол-во столбцов до 4х ]----------------------
+
+1. НАСТРОЙКИ =Шаблоны =ШАБЛОН =Расширенные настройки
+            Левая колонка по умолчанию:НЕТ
+            Правая колонка по умолчанию:НЕТ
+            Количество товаров на странице:16
+
+2. В файле /themes/default-bootstrap/product-list.tpl переменная nbItemsPerLine
+{if $page_name !='index' && $page_name !='product'}
+	{assign var='nbItemsPerLine' value=3}
+........
+	{assign var='nbItemsPerLine' value=4}
+
+3. В файле /themes/default-bootstrap/product-list.tpl
+<li class="ajax_block_product{if $page_name == 'index' || $page_name == 'product'} col-xs-12 col-sm-4 col-md-3{else} col-xs-12 col-sm-6 col-md-4{/if}{if $smarty.foreach.products.
+........
+<li class="ajax_block_product{if $page_name == 'index' || $page_name == 'product'} col-xs-12 col-sm-4 col-md-3{else} col-xs-12 col-sm-6 col-md-3{/if}{if $smarty.foreach.products.
+
 ---------------------------------------[ Импорт ]-------------------------------
+
+Категории + Товары
+            Использовать все номера ID:ДА
+
 1. Excel: Экспорт в csv
    Разделитель поля ;
    Разделитель текста "
@@ -234,7 +264,14 @@ $ mysql -u root -p
             Разделитель значений:"
             Удалить все категории до импорта?:ДА
 
+
+
+
 ------------------------------------[ После импорта ]---------------------------
+
+
+------------------------------------[ После импорта ]---------------------------
+
 1. НАСТРОЙКИ =Заказы =ОБЩЕЕ
             Включить "Гостевую" покупку:ДА
 
@@ -282,7 +319,22 @@ $ mysql -u root -p
 Блок Моя учетная запись в подвале
 
  ?М.[Реферальная программа покупателя]
- ?М.[Карта сайта Google sitemap]
+  М.[Карта сайта Google sitemap]
+        Карта сайта Google sitemap
+             отключаем все кроме
+Address [address]
+Best sales [best-sales]
+Discount [discount]
+Identity [identity]
+
+[module-blockwishlist-view]
+New products [new-products]
+
+Addresses [addresses]
+Мебельный интернет-магазин – корпусная и мягкая мебель, большой выбор в каталоге мебели [index]
+
+Stores [stores]
+
  ?М.[Блок рассылки]
  ?М.[Кросс-продажи]
  ?М.[Оповещения по почте]
@@ -292,6 +344,7 @@ $ mysql -u root -p
 
 -----------------------------[ Убираем Prestashop ]-----------------------------
 
+
 М.[Слайдшоу на главной странице homeslider]
           СПИСОК СЛАЙДОВ =Ссылка: http://www.stock-price.ru/...
 М.[CMS блок]
@@ -299,6 +352,7 @@ $ mysql -u root -p
 log.xak: -[ Meta generator ]-
 
 --------------------------[ Доведение магазина до ума ]-------------------------
+
 1. НАСТРОЙКИ =SEO и URLs =ГЕНЕРАТОР ФАЙЛОВ ROBOTS: Генерировать robots.txt
    М.[Google Analytics]
    М.[Карта сайта Google sitemap]
@@ -318,6 +372,7 @@ log.xak: -[ Meta generator ]-
 3. 
 
 ---------------------------[ Резервирование Магазина ]--------------------------
+
 Инициируем Git
 $ yaourt -S git
 $ cd ~/path
@@ -361,12 +416,15 @@ $ sudo mysql -u root -p stockb < ~/www/base/stockbDDMMYY.sql
 $ cd ~/path
 $ git clone https://github.com/name/www.git dir_name
 
-----------------------------------[ ssh:копирование файлов ]--------------------
+--------------------------[ ssh:копирование файлов ]----------------------------
+
 $ scp -P 22 -r ~/Projects/source_cms/452 user@0.00.000.62:~/download/
 $ scp -P 22 -r user@0.00.000.62:~/download/78 ~/Загрузки/
 или без -r для файлов
 
 -------------------------[ Консольная работа с базой ]--------------------------
+
+
 $ mysql -u root -p
 ]> show databases;
 ]> create database имя_базы DEFAULT CHARACTER SET utf8;
@@ -383,6 +441,7 @@ $ mysql -u root -p
 $ mysqladmin -u root -p'ТЕКУЩИЙ_ПАРОЛЬ' password 'НОВЫЙ_ПАРОЛЬ'
 
 -----------------------------[ поиск и замена кл.слов ]-------------------------
+
 $ cd ~/Projects/www/site.loc/templates/newLevel
 $ find . -ls
 $ find . -name "*css" -print

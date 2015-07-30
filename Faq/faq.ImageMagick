@@ -37,18 +37,18 @@ $ find . -iregex '.*.jpg' -exec composite -dissolve 50% -gravity South ~/wm.png 
 $ convert -background '#f13340' -fill white -font Impact -pointsize 75 label:' stock-price.ru ' wm.jpg
 $ convert -rotate '-4' wm.jpg wm.png
 
------------------Картинка для меню
-$ convert -background '#f13340' -fill white -font Impact -pointsize 103 label:' ЛУЧШИЕ ЦЕНЫ ТУТ ' thumb11.jpg
+-----------------Картинки для меню
+$ convert -background '#f13340' -fill white -font Impact -pointsize 103 label:' ЛУЧШИЕ ЦЕНЫ ТУТ ! ' thumb11.jpg
 $ convert -background '#f13340' -fill white -font Impact -pointsize 103 label:' МЫ ДЕЛАЕМ МЕБЕЛЬ ' thumb12.jpg
-$ convert -background '#f13340' -fill white -font Impact -pointsize 103 label:' ДОСТУПНОЙ ДЛЯ ВСЕХ ! ' thumb13.jpg
+$ convert -background '#f13340' -fill white -font Impact -pointsize 103 label:' ДОСТУПНОЙ ДЛЯ ВСЕХ ' thumb13.jpg
 
-$ convert -background '#00cc66' -fill white -font Impact -pointsize 103 label:' ЭТО ЦЕНА ЗА КУХНЮ ! ' thumb21.jpg
-$ convert -background '#00cc66' -fill white -font Impact -pointsize 103 label:' А НЕ ЗА МЕТР ' thumb22.jpg
+$ convert -background '#00cc66' -fill white -font Impact -pointsize 103 label:' ЭТО ЦЕНЫ ЗА КУХНЮ ' thumb21.jpg
+$ convert -background '#00cc66' -fill white -font Impact -pointsize 103 label:' А НЕ ЗА МЕТР ! ' thumb22.jpg
 
 
 $ convert -background '#fe9126' -fill white -font Impact -pointsize 103 label:' ОТЛИЧНЫЕ СПАЛЬНИ ТУТ ' thumb31.jpg
-$ convert -background '#fe9126' -fill white -font Impact -pointsize 103 label:' ОТЛИЧНЫЕ ЦЕНЫ ' thumb32.jpg
-$ convert -background '#fe9126' -fill white -font Impact -pointsize 103 label:' ОТЛИЧНОЕ КАЧЕСТВО ! ' thumb33.jpg
+$ convert -background '#fe9126' -fill white -font Impact -pointsize 103 label:' ОТЛИЧНЫЕ ЦЕНЫ ! ' thumb32.jpg
+$ convert -background '#fe9126' -fill white -font Impact -pointsize 103 label:' ОТЛИЧНОЕ КАЧЕСТВО ' thumb33.jpg
 
 $ convert -background '#6ad4ff' -fill white -font Impact -pointsize 103 label:' МЕБЕЛЬ ДЛЯ ДЕТСКОЙ ' thumb41.jpg
 $ convert -background '#6ad4ff' -fill white -font Impact -pointsize 103 label:' ТУТ ' thumb42.jpg
