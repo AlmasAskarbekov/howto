@@ -1,4 +1,186 @@
----------------------------------[ НАСТРОЙКА СЕРВЕРА ]--------------------------
+--------------------------[ Сценарий для локального Магазина ]------------------
+
+$ sudo rm -rf ~/www/stock-price.ru
+
+$ sudo systemctl start php-fpm
+$ sudo systemctl start nginx
+$ sudo systemctl start mysqld
+
+$ mysql -u root -p
+]> show databases;
+]> drop database имя_базы;
+]> CREATE DATABASE имя_базы;
+]> exit
+
+$ cd ~/.../import
+$ find . -iregex '.*.jpg' -exec mogrify -resize x900 {} {} \;
+
+$ cp ~/.../import ~/www/stock-price.ru/themes
+
+$ chmod 755 ~/www
+$ chmod 755 ~/www/stock-price.ru
+$ find ~/www/stock-price.ru -type f -print0 | xargs -0 chmod 664
+$ find ~/www/stock-price.ru -type d -print0 | xargs -0 chmod 775
+$ sudo chown -R archie:http ~/www/stock-price.ru
+
+$ rm -rf ~/www/stock-price.ru/install
+
+ >> М.[Очистка PrestaShop eng.PSCLEANER]
+
+ >> НАСТРОЙКИ =Шаблоны =ШАБЛОН
+           =Конфигуратор шаблона ОТКЛЮЧАЕМ ВСЕ кроме =Показать контактную информацию
+                    =Управление хуками
+                         =Начать "Живое редактирование"
+
+           =Расширенные настройки
+            Количество товаров на странице:16
+
+ >> /themes/default-bootstrap/product-list.tpl переменная nbItemsPerLine
+
+ {if $page_name !='index' && $page_name !='product'}
+	{assign var='nbItemsPerLine' value=3}
+ ........
+	{assign var='nbItemsPerLine' value=4}
+
+ >> /themes/default-bootstrap/product-list.tpl
+
+ <li class="ajax_block_product{if $page_name == 'index' || $page_name == 'product'} col-xs-12 col-sm-4 col-md-3{else} col-xs-12 col-sm-6 col-md-4
+ ........
+ <li class="ajax_block_product{if $page_name == 'index' || $page_name == 'product'} col-xs-12 col-sm-4 col-md-3{else} col-xs-12 col-sm-6 col-md-3
+
+ >> ЛОКАЛИЗАЦИЯ =Валюты =Десятичные:НЕТ [Округление]
+                =Налоги =Разрешить НДС:НЕТ [Отключаем НДС]
+
+ >> НАСТРОЙКИ =Изображения =Редактировать:thickbox_default
+            Ширина:?1200
+            Высота:?900
+            Метод генерации:Высота
+
+$ convert -background '#f13340' -fill white -font Impact -pointsize 75 label:' stock-price.ru ' wm.gif
+
+ >> М.[Watermark]
+            Watermark transparency (1-100): 35
+            Watermark X align: середина
+            Watermark Y align: низ
+            Choose image types .. : thickbox_default (1200 x 900)
+
+ >> РАСШИРЕНЫЕ ПАРАМЕТРЫ =Импорт CSV =Категории
+                                     =Товары
+                                     =Комбинации
+                         =Использовать все номера ID:ДА
+
+ >> НАСТРОЙКИ =Товары =СТРАНИЦА ТОВАРА
+            Показывать количество товара:НЕТ
+            Показывать остаток, если количество стало меньше, чем:1
+                     =ЗАПАСЫ ТОВАРОВ
+            Разрешить заказ товаров с нулевым остатком на складе:НЕТ
+
+ >> НАСТРОЙКИ =SEO и URLs
+            URL-АДРЕСА УСТАНОВКИ/ЧПУ:ДА
+
+            
+~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!
+1. НАСТРОЙКИ =Заказы =ОБЩЕЕ
+            Включить "Гостевую" покупку:ДА
+
+2. НАСТРОЙКИ =SEO и URLs
+            =Index -> УДАЛИТЬ -Магазин создан на PrestaShop
+            =Index -> ЗАПОЛНИТЬ Title
+            ...
+            =Служебная страница -> ЗАПОЛНИТЬ Title
+
+   НАСТРОЙКИ =КОНТАКТЫ МАГАЗИНА
+
+ М.[Текстовый редактор главной страницы eng.EDITORIAL] (текст под Высокочастотные запросы)
+ М.[Слайдшоу для Вашей домашней страницы]
+ М.[Блок контактов]
+ М.[Блок пунктов выдачи]
+ 
+ М.[Блок многоуровневых навигационных фильтров] (фильтр)
+ М.[Товары в той же категории] (Отображать цены товаров в блоке:ДА)
+ М.[Комментарии к товару] (Разрешить гостям комментарии:ДА)
+ М.[Блок категорий]
+
+ М.[Новые товары] (12-60-НЕТ)
+ М.[Рекомендуемые товары на главной] (8) ПОПУЛЯРНОЕ
+ М.[Блок лидеров продаж] (НЕТ)
+
+ М.[1-Click Upgrade]
+ М.[Импорт/экспорт шаблонов] Template Installer
+ М.[Обработка данных статистики]
+
+Отключить:
+М.[Блок Моя учетная запись в подвале
+
+
+ ?М.[Блок рассылки]
+ ?М.[Кросс-продажи]
+ ?М.[Оповещения по почте]
+ ?М.[Рассылка]
+ ?М.[Рекламный блок]
+ ?М.[Сравнения перевозчиков]
+
+
+-----------------------------[ Убираем Prestashop ]-----------------------------
+
+
+М.[Слайдшоу на главной странице homeslider]
+          СПИСОК СЛАЙДОВ =Ссылка: http://www.stock-price.ru/...
+М.[CMS блок]
+          Display "Powered by PrestaShop"
+
+
+--------------------------[ Доведение магазина до ума ]-------------------------
+
+1. НАСТРОЙКИ =SEO и URLs =ГЕНЕРАТОР ФАЙЛОВ ROBOTS: Генерировать robots.txt
+   М.[Google Analytics]
+   М.[Карта сайта Google sitemap]
+отключаем все кроме
+Address [address]
+Best sales [best-sales]
+Discount [discount]
+Identity [identity]
+
+[module-blockwishlist-view]
+New products [new-products]
+
+Addresses [addresses]
+Мебельный интернет-магазин – корпусная и мягкая мебель, большой выбор в каталоге мебели [index]
+
+Stores [stores]
+
+2. Я.Метрика
+   site.ru/themes/.../footer.tpl
+            </div>
+            {literal}
+            <!-- Yandex.Metrika informer -->
+            ---    Твой код ---
+            <!-- /Yandex.Metrika counter -->
+            {/literal}
+            {/if}
+            </body>
+            </html>
+~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!
+8. РАСШИРЕНЫЕ ПАРАМЕТРЫ =Веб службы Включить
+            Webservice:ДА
+            Включить режим CGI в PHP:ДА
+
+9. РАСШИРЕНЫЕ ПАРАМЕТРЫ =Производительность =SMARTY
+            Кэш:ДА
+                        =Производительность ККК (КОМБИНИРОВАНИЕ, КОМПРЕССИЯ И КЭШИРОВАНИЕ)
+            Умное кэширование CSS:ДА
+            Умное кэширование JavaScript:ДА
+            Минификация HTML:НЕТ
+            Сжатие встроенного в HTML JavaScript:ДА
+                        =КЭШИРОВАНИЕ
+            Использовать кэширование:ДА
+
+11. НАСТРОЙКИ =ОБЩЕЕ
+            Разрешить iframes в HTML полях:НЕТ
+            Use HTMLPurifier Library:НЕТ
+~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!~!
+
+-----------------------[ Сценарий для Магазина на VDS/dedicated ]---------------
 
 p.s. Параметры сети (Вам ее нужно будет настроить вручную):
 ip 0.00.000.62
@@ -105,6 +287,44 @@ WantedBy=sockets.target
 $ rm ~/.ssh/known_hosts
 $ ssh -p 2525 archie@0.00.000.62
 
+-------------------------------------[ Подготовка ]-----------------------------
+
+   $ cd ~/download/_p.s.v.e.r
+   $ wget http://www.prestashop.com/download/prestashop_p.s.v.e.r.zip
+   $ unzip prestashop_p.s.v.e.r.zip
+   $ mv prestashop/* .
+   $ rm prestashop_p.s.v.e.r.zip
+   $ rmdir prestashop/
+
+   старый импорт
+   $ cp -a ~/www/site.ru/import ~/download/_p.s.v.e.r/
+   или
+   $ scp -P 22 -r ~/../import user@0.00.000.62:~/download/_p.s.v.e.r/
+
+   копируем
+   robots.txt sitemap.xml google#.html yandex_#.html
+
+   $ mysql -u root -p
+      ]> show databases;
+      ]> drop database stockb;
+      ]> CREATE DATABASE stockb;
+      ]> GRANT ALL ON stockb.* TO xuser@localhost IDENTIFIED BY 'пароль';
+      ]> SHOW GRANTS FOR xuser@localhost;
+      ]> exit
+
+   $ rm -rf ~/www/site.ru
+   $ cp -a ~/download/_p.s.v.e.r ~/www/site.ru
+
+   $ chmod 755 ~/www
+   $ chmod 755 ~/www/site.ru
+   $ find ~/www/site.ru -type f -print0 | xargs -0 chmod 664
+   $ find ~/www/site.ru -type d -print0 | xargs -0 chmod 775
+   $ sudo chown -R archie:http ~/www/site.ru
+
+   $ rm -rf ~/www/site.ru/install
+
+
+
 -------------------------------[ Настраиваем php mail ]-------------------------
 
 https://www.digitalocean.com/community/tutorials/how-to-setup-exim-spamassassin-clamd-and-dovecot-on-an-arch-linux-vps
@@ -131,326 +351,8 @@ $ sudo systemctl start exim
 
 $ sudo tail /var/log/exim/mainlog
 
-------------------------------------[ Создаем Базу ]----------------------------
-
-$ mysql -u root -p
-]> CREATE DATABASE zero45;
-]> CREATE DATABASE demo45;
-]> CREATE DATABASE stock45;
-]> CREATE DATABASE stockb;
-]> GRANT ALL ON zero45.* TO xuser@localhost IDENTIFIED BY 'пароль';
-]> GRANT ALL ON demo45.* TO xuser@localhost;
-]> GRANT ALL ON stock45.* TO xuser@localhost;
-]> GRANT ALL ON stockb.* TO suser@localhost IDENTIFIED BY 'пароль';
-]> quit;
-
--------------------------------------[ Подготовка ]-----------------------------
-
-1.$ cd ~/download/psver
-  $ wget http://www.prestashop.com/download/prestashop_p.s.v.e.r.zip
-  $ unzip prestashop_p.s.v.e.r.zip
-  $ mv prestashop/* .
-  $ rm prestashop_p.s.v.e.r.zip
-  $ rmdir prestashop/
-
-2. старый импорт
-   cp -a ~/www/site.ru/import ~/download/psver/
-   или
-   scp -P 22 -r ~/../import user@0.00.000.62:~/download/psver/
-
-3. а так-же копируем
-   robots.txt sitemap.xml google#.html yandex_#.html
-
-4. log.xak
-5. $ mysql -u root -p
-      ]> show databases;
-      ]> drop database stockb;
-      ]> CREATE DATABASE stockb;
-      ]> GRANT ALL ON stockb.* TO xuser@localhost IDENTIFIED BY 'пароль';
-      ]> SHOW GRANTS FOR xuser@localhost;
-      ]> quit;
-   $ rm -rf ~/www/site.ru
-   $ cp -a ~/download/psver ~/www/site.ru
-#   $ chmod 755 ~/
-#   $ chmod 755 ~/www
-   $ chmod 755 ~/www/site.ru
-   $ find ~/www/site.ru -type f -print0 | xargs -0 chmod 664
-   $ find ~/www/site.ru -type d -print0 | xargs -0 chmod 775
-   $ sudo chown -R archie:http ~/www/site.ru
-   ...
-   $ rm -rf ~/www/site.ru/install
-
--------------------------------------[ До импорта ]-----------------------------
-
-1. М.[Очистка PrestaShop eng.PSCLEANER]
-
-2. Характеристики продукта: Ширина width, Высота height, Глубина depth
-            =индексируемые:НЕТ
-
-3. НАСТРОЙКИ =Изображения =Редактировать:thickbox_default
-            Ширина:800
-            Высота:2000
-            Метод генерации:Высота
-
-4. М.[Watermark] (convert -background '#f04040' -fill white -font Sony-Sketch-EF -pointsize 75 label:' stock-price.ru ' wm.gif)
-            Watermark transparency (1-100): 35
-            Watermark X align: середина
-            Watermark Y align: низ
-            Choose image types .. : thickbox_default (900 x 1200)
-
-5. НАСТРОЙКИ =Товары =СТРАНИЦА ТОВАРА
-            Показывать количество товара:НЕТ
-            Показывать остаток, если количество стало меньше, чем:1
-                     =ЗАПАСЫ ТОВАРОВ
-            Разрешить заказ товаров с нулевым остатком на складе:НЕТ
-
-6. М.[Блок тегов]:50
-
-7. НАСТРОЙКИ =SEO и URLs
-            URL-АДРЕСА УСТАНОВКИ/ЧПУ:ДА
-            Специальные символы в URL:ДА
-           
-8. РАСШИРЕНЫЕ ПАРАМЕТРЫ =Веб службы Включить
-            Webservice:ДА
-            Включить режим CGI в PHP:ДА
-
-9. РАСШИРЕНЫЕ ПАРАМЕТРЫ =Производительность =SMARTY
-            Кэш:ДА
-                        =Производительность ККК (КОМБИНИРОВАНИЕ, КОМПРЕССИЯ И КЭШИРОВАНИЕ)
-            Умное кэширование CSS:ДА
-            Умное кэширование JavaScript:ДА
-            Минификация HTML:НЕТ
-            Сжатие встроенного в HTML JavaScript:ДА
-                        =КЭШИРОВАНИЕ
-            Использовать кэширование:ДА
-            Система кэширования:APC
-
-10. М.[Главное горизонтальное меню] =Удаляем Blog =Настраиваем Меню
-
-11. НАСТРОЙКИ =ОБЩЕЕ
-            Разрешить iframes в HTML полях:НЕТ
-            Use HTMLPurifier Library:НЕТ
-
-12. ЛОКАЛИЗАЦИЯ =Валюты =Десятичные:НЕТ [Округление]
-                =Налоги =Разрешить НДС:НЕТ [Отключаем НДС]
-
------------------------[ Расширяем кол-во столбцов до 4х ]----------------------
-
-1. НАСТРОЙКИ =Шаблоны =ШАБЛОН =Расширенные настройки
-            Левая колонка по умолчанию:НЕТ
-            Правая колонка по умолчанию:НЕТ
-            Количество товаров на странице:16
-
-2. В файле /themes/default-bootstrap/product-list.tpl переменная nbItemsPerLine
-{if $page_name !='index' && $page_name !='product'}
-	{assign var='nbItemsPerLine' value=3}
-........
-	{assign var='nbItemsPerLine' value=4}
-
-3. В файле /themes/default-bootstrap/product-list.tpl
-<li class="ajax_block_product{if $page_name == 'index' || $page_name == 'product'} col-xs-12 col-sm-4 col-md-3{else} col-xs-12 col-sm-6 col-md-4{/if}{if $smarty.foreach.products.
-........
-<li class="ajax_block_product{if $page_name == 'index' || $page_name == 'product'} col-xs-12 col-sm-4 col-md-3{else} col-xs-12 col-sm-6 col-md-3{/if}{if $smarty.foreach.products.
-
----------------------------------------[ Импорт ]-------------------------------
-
-Категории + Товары
-            Использовать все номера ID:ДА
-
-1. Excel: Экспорт в csv
-   Разделитель поля ;
-   Разделитель текста "
-2. РАСШИРЕНЫЕ ПАРАМЕТРЫ =Импорт CSV =Категории (Товары)
-            Разделитель значений:"
-            Удалить все категории до импорта?:ДА
-
-
-
-
-------------------------------------[ После импорта ]---------------------------
-
-
-------------------------------------[ После импорта ]---------------------------
-
-1. НАСТРОЙКИ =Заказы =ОБЩЕЕ
-            Включить "Гостевую" покупку:ДА
-
-2. НАСТРОЙКИ =SEO и URLs
-            =Index -> УДАЛИТЬ -Магазин создан на PrestaShop
-            =Index -> ЗАПОЛНИТЬ Title
-            ...
-            =Служебная страница -> ЗАПОЛНИТЬ Title
-
-3. М.[Конфигуратор темы]
-            M.[Блок соц. сетей]:НЕТ
-            M.[Блок контактной информации]
-            M.[Социальные сети]:НЕТ
-            M.[Блок Facebook]:НЕТ
-            M.[Пользовательский информационный блок CMS]:НЕТ
-            M.[Баннер блок eng.Display top banner]:НЕТ  # использовать для акций
-            M.[Блок логотипов платежных систем]
-
-4. РАСШИРЕНЫЕ ПАРАМЕТРЫ =Производительность ККК (КОМБИНИРОВАНИЕ, КОМПРЕССИЯ И КЭШИРОВАНИЕ)
-            Минификация HTML:ДА
-
- М.[Текстовый редактор главной страницы eng.EDITORIAL] (текст под Высокочастотные запросы)
- М.[Слайдшоу для Вашей домашней страницы]
- М.[Блок контактов]
- М.[Блок пунктов выдачи] ТЦ Европа, ул. 20-летия Октября, дом 123, 394006 г. Воронеж, Россия
- 
- М.[Блок многоуровневых навигационных фильтров] (фильтр)
- М.[Товары в той же категории] (Отображать цены товаров в блоке:ДА)
- М.[Комментарии к товару] (Разрешить гостям комментарии:ДА)
- М.[Блок категорий]
-
- М.[Новые товары] (12-60-НЕТ)
- М.[Рекомендуемые товары на главной] (8) ПОПУЛЯРНОЕ
- М.[Блок лидеров продаж] (НЕТ)
-
- М.[1-Click Upgrade]
- М.[Импорт/экспорт шаблонов] Template Installer
- М.[Обработка данных статистики]
- 
--> НАСТРОЙКИ =КОНТАКТЫ МАГАЗИНА
-
--> ХАК маленьких изображений
-
-Отключить:
-Блок Моя учетная запись в подвале
-
- ?М.[Реферальная программа покупателя]
-  М.[Карта сайта Google sitemap]
-        Карта сайта Google sitemap
-             отключаем все кроме
-Address [address]
-Best sales [best-sales]
-Discount [discount]
-Identity [identity]
-
-[module-blockwishlist-view]
-New products [new-products]
-
-Addresses [addresses]
-Мебельный интернет-магазин – корпусная и мягкая мебель, большой выбор в каталоге мебели [index]
-
-Stores [stores]
-
- ?М.[Блок рассылки]
- ?М.[Кросс-продажи]
- ?М.[Оповещения по почте]
- ?М.[Рассылка]
- ?М.[Рекламный блок]
- ?М.[Сравнения перевозчиков]
-
------------------------------[ Убираем Prestashop ]-----------------------------
-
-
-М.[Слайдшоу на главной странице homeslider]
-          СПИСОК СЛАЙДОВ =Ссылка: http://www.stock-price.ru/...
-М.[CMS блок]
-          Display "Powered by PrestaShop"
-log.xak: -[ Meta generator ]-
-
---------------------------[ Доведение магазина до ума ]-------------------------
-
-1. НАСТРОЙКИ =SEO и URLs =ГЕНЕРАТОР ФАЙЛОВ ROBOTS: Генерировать robots.txt
-   М.[Google Analytics]
-   М.[Карта сайта Google sitemap]
-
-2. Я.Метрика
-   site.ru/themes/.../footer.tpl
-            </div>
-            {literal}
-            <!-- Yandex.Metrika informer -->
-            ---    Твой код ---
-            <!-- /Yandex.Metrika counter -->
-            {/literal}
-            {/if}
-            </body>
-            </html>
-
-3. 
-
----------------------------[ Резервирование Магазина ]--------------------------
-
-Инициируем Git
-$ yaourt -S git
-$ cd ~/path
-$ git init
-$ nano ~/path/.gitignore
-  *~
-  pricestock.ru/
-  price-stock.ru/
-  preferred-stock.ru/
-
-$ nano .gitconfig
-  [user]
-     name = ...
-     email = ...
-  [alias]
-     co = checkout
-     ci = commit
-     st = status
-     br = branch
-     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-     type = cat-file -t
-     dump = cat-file -p
-
-1. Резервируем базу
-$ sudo mysqldump --add-drop-table -u root -p stockb > ~/www/base/stockbDDMMYY.sql
-
-2. Создаем на GitHub в ручную хранилище "www" и подключаем его
-
-3. Кидаем все на GitHub
-$ git st
-$ git add .
-$ git commit -m "~backup~"
-$ git remote add origin https://github.com/name/www.git
-$ git push -u origin master    # -f если уже внесены изменения force
-$ git hist
-
-3. Восстанавливаем базу
-$ sudo mysql -u root -p stockb < ~/www/base/stockbDDMMYY.sql
-
-4. Восстанавливаем движок
-$ cd ~/path
-$ git clone https://github.com/name/www.git dir_name
-
 --------------------------[ ssh:копирование файлов ]----------------------------
 
 $ scp -P 22 -r ~/Projects/source_cms/452 user@0.00.000.62:~/download/
 $ scp -P 22 -r user@0.00.000.62:~/download/78 ~/Загрузки/
 или без -r для файлов
-
--------------------------[ Консольная работа с базой ]--------------------------
-
-
-$ mysql -u root -p
-]> show databases;
-]> create database имя_базы DEFAULT CHARACTER SET utf8;
-или
-]> CREATE DATABASE имя_базы;
-]> drop database имя_базы;
-]> create user 'логин'@'localhost' IDENTIFIED BY 'пароль';
-назначить права для определенных баз данных
-]> GRANT ALL ON имя_базы.* TO yuser@localhost IDENTIFIED BY 'пароль';
-]> drop user логин;
-]> rename user 'user'@'host' TO 'user2'@'host2';
-]> set password for 'user'@'host' = PASSWORD('пароль');
-]> exit
-$ mysqladmin -u root -p'ТЕКУЩИЙ_ПАРОЛЬ' password 'НОВЫЙ_ПАРОЛЬ'
-
------------------------------[ поиск и замена кл.слов ]-------------------------
-
-$ cd ~/Projects/www/site.loc/templates/newLevel
-$ find . -ls
-$ find . -name "*css" -print
-
-find ~/Projects/www/icms.null/ -name "*.*" | xargs grep -n "imagecms.net"
-find ~/Projects/www/site.loc/ -type f | xargs grep -n "#0b92c1"
-
-find ~/Projects/www/exp1/ -type f -print0 | xargs --null perl -pi -e 's/imagecms.net/democms.net/'
-#find ~/Projects/www/exp1/ -type f -print0 | xargs --null perl -pi -e 's/ImageCMS/DemoCMS/'
-
-find ~/Projects/www/exp1/ -type f -name '*.*' -print0 | xargs --null perl -pi -e 's/imagecms.net/democms.net/'
-#find ~/Projects/www/exp1/ -type f -name '*.*' -print0 | xargs --null perl -pi -e 's/ImageCMS/DemoCMS/'

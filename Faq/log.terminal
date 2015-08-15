@@ -1,26 +1,3 @@
-sudo rm -rf ~/www/stock-price.ru
-mysql -u root -p
-cp -a ~/download/1609 ~/www/stock-price.ru
-chmod 755 ~/www/stock-price.ru
-find ~/www/stock-price.ru -type f -print0 | xargs -0 chmod 664
-find ~/www/stock-price.ru -type d -print0 | xargs -0 chmod 775
-sudo chown -R archie:http ~/www/stock-price.ru
-rm -rf ~/www/stock-price.ru/install
-
-
-$ sudo rm -rf ~/www/stock-price.ru
-$ mysql -u root -p
-$ cp -a ~/Загрузки/0.www/stock-price.ru ~/www/stock-price.ru
-$ chmod 755 ~/www/stock-price.ru
-$ find ~/www/stock-price.ru -type f -print0 | xargs -0 chmod 664
-$ find ~/www/stock-price.ru -type d -print0 | xargs -0 chmod 775
-$ sudo chown -R archie:http ~/www/stock-price.ru
-
-$ sudo systemctl restart php-fpm
-$ sudo systemctl restart nginx
-$ sudo systemctl restart mysqld
-
-$ rm -rf ~/www/stock-price.ru/install
 
 $ sudo gedit /etc/php/php.ini
 $ sudo gedit /etc/mysql/my.cnf

@@ -1,13 +1,3 @@
-$ git st
-$ git add .
-$ git commit -m "LAMP not all"
-
-> создание нового репозитория
-$ git remote add origin https://github.com/4exob/имя.git
-
-$ git push -u origin master
-$ git hist
-
 ----------------------------Установка Archlinux--------------------
 $ user
 # root
@@ -477,7 +467,8 @@ $ sudo systemctl disable dhcpcd.service
 $ sudo systemctl enable NetworkManager-wait-online.service
 -------------------------------------------------------------------
 $ yaourt -S inxi
-inxi -v4 -c6 OR inxi -bDc 6
+$ inxi -v4 -c6 OR inxi -bDc 6
+$ sudo du --si --max-depth=1
 -------------------------------------------------------------------
 sftp://archie@5.34.183.62:2525/home/archie
 ftp://pfr5435082-exp@ftp.pswebshop.com/

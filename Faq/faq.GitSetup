@@ -44,6 +44,9 @@ $ git config --list
 
 > АЛИАСЫ и шорткаты для команд git
 $ gedit ~/.gitconfig
+[user]
+     name = ...
+     email = ...
 [alias]
   co = checkout
   ci = commit
