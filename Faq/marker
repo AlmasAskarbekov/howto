@@ -1,0 +1,387 @@
+#!/bin/bash
+convert gorizont/1015001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Лима 1.5м ' gorizont/1015001_1.jpg
+convert gorizont/1015001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 5 800 p. ' gorizont/1015001_1.jpg
+convert dsv/1015002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Дения 1.5м ' dsv/1015002_1.jpg
+convert dsv/1015002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 5 800 p. ' dsv/1015002_1.jpg
+convert bts/1017001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Евро 1.7м ' bts/1017001_1.jpg
+convert bts/1017001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 200 p. ' bts/1017001_1.jpg
+convert gorizont/1017002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Интеро 1.7м ' gorizont/1017002_1.jpg
+convert gorizont/1017002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 200 p. ' gorizont/1017002_1.jpg
+convert gorizont/1019001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Оптима 1.9м ' gorizont/1019001_1.jpg
+convert gorizont/1019001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 500 p. ' gorizont/1019001_1.jpg
+convert bts/1020001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Белла 2м ' bts/1020001_1.jpg
+convert bts/1020001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 300 p. ' bts/1020001_1.jpg
+convert gorizont/1020002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Рио 2м ' gorizont/1020002_1.jpg
+convert gorizont/1020002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 200 p. ' gorizont/1020002_1.jpg
+convert gorizont/1021001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Пекин 2.1м ' gorizont/1021001_1.jpg
+convert gorizont/1021001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 950 p. ' gorizont/1021001_1.jpg
+convert gorizont/1023001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Латте 2.3м ' gorizont/1023001_1.jpg
+convert gorizont/1023001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 500 p. ' gorizont/1023001_1.jpg
+convert bts/1024001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Стиль 2.4м ' bts/1024001_1.jpg
+convert bts/1024001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 950 p. ' bts/1024001_1.jpg
+convert bts/1024002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Стиль 2.4м ' bts/1024002_1.jpg
+convert bts/1024002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 950 p. ' bts/1024002_1.jpg
+convert gorizont/1024003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Верона 2.4м ' gorizont/1024003_1.jpg
+convert gorizont/1024003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 950 p. ' gorizont/1024003_1.jpg
+convert gorizont/1024004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Верона 2.4м ' gorizont/1024004_1.jpg
+convert gorizont/1024004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 950 p. ' gorizont/1024004_1.jpg
+convert bts/1025001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Каприз 2.5м ' bts/1025001_1.jpg
+convert bts/1025001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 700 p. ' bts/1025001_1.jpg
+convert gorizont/1025002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Каир 2.5м ' gorizont/1025002_1.jpg
+convert gorizont/1025002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 500 p. ' gorizont/1025002_1.jpg
+convert dsv/1026001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Гранада 2.6м ' dsv/1026001_1.jpg
+convert dsv/1026001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 18 400 p. ' dsv/1026001_1.jpg
+convert dsv/1026002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Гранада 2.6м ' dsv/1026002_1.jpg
+convert dsv/1026002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 18 400 p. ' dsv/1026002_1.jpg
+convert dsv/1026003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Гранада 2.6м ' dsv/1026003_1.jpg
+convert dsv/1026003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 18 400 p. ' dsv/1026003_1.jpg
+convert bts/1027001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Флора 2.7м ' bts/1027001_1.jpg
+convert bts/1027001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 12 900 p. ' bts/1027001_1.jpg
+convert bts/1027002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Флора 2.7м ' bts/1027002_1.jpg
+convert bts/1027002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 12 900 p. ' bts/1027002_1.jpg
+convert gorizont/1027003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Альфа 2.7м ' gorizont/1027003_1.jpg
+convert gorizont/1027003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 500 p. ' gorizont/1027003_1.jpg
+convert gorizont/1027010_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Альфа 2.7м ' gorizont/1027010_1.jpg
+convert gorizont/1027010_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 500 p. ' gorizont/1027010_1.jpg
+convert dsv/1027004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Марта 2.7м ' dsv/1027004_1.jpg
+convert dsv/1027004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 12 900 p. ' dsv/1027004_1.jpg
+convert dsv/1027005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Марта 2.7м ' dsv/1027005_1.jpg
+convert dsv/1027005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 12 900 p. ' dsv/1027005_1.jpg
+convert dsv/1027006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Марта 2.7м ' dsv/1027006_1.jpg
+convert dsv/1027006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 500 p. ' dsv/1027006_1.jpg
+convert dsv/1027007_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Марта 2.7м ' dsv/1027007_1.jpg
+convert dsv/1027007_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 500 p. ' dsv/1027007_1.jpg
+convert bts/1027008_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Зодиак 2.7м ' bts/1027008_1.jpg
+convert bts/1027008_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 000 p. ' bts/1027008_1.jpg
+convert gorizont/1027009_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Бета 2.7м ' gorizont/1027009_1.jpg
+convert gorizont/1027009_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 850 p. ' gorizont/1027009_1.jpg
+convert bts/1028001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Белла 2.8м ' bts/1028001_1.jpg
+convert bts/1028001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 500 p. ' bts/1028001_1.jpg
+convert bts/1028002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Эстель 2.8м ' bts/1028002_1.jpg
+convert bts/1028002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 990 p. ' bts/1028002_1.jpg
+convert gorizont/1028003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Макарена 2.8м ' gorizont/1028003_1.jpg
+convert gorizont/1028003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 570 p. ' gorizont/1028003_1.jpg
+convert gorizont/1028004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Макарена МДФ ' gorizont/1028004_1.jpg
+convert gorizont/1028004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 750 p. ' gorizont/1028004_1.jpg
+convert gorizont/1028005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Макарена МДФ ' gorizont/1028005_1.jpg
+convert gorizont/1028005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 750 p. ' gorizont/1028005_1.jpg
+convert gorizont/1028006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Виго 2.8м ' gorizont/1028006_1.jpg
+convert gorizont/1028006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 18 970 p. ' gorizont/1028006_1.jpg
+convert gorizont/1028007_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Сапфир 3.6м ' gorizont/1028007_1.jpg
+convert gorizont/1028007_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 500 p. ' gorizont/1028007_1.jpg
+convert dsv/1030001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Майя 3м ' dsv/1030001_1.jpg
+convert dsv/1030001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 900 p. ' dsv/1030001_1.jpg
+convert bts/1032001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Белла 3.2м ' bts/1032001_1.jpg
+convert bts/1032001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 16 100 p. ' bts/1032001_1.jpg
+convert dsv/1032002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Гранада 3.2м ' dsv/1032002_1.jpg
+convert dsv/1032002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 25 300 p. ' dsv/1032002_1.jpg
+convert dsv/1032003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Гранада 3.2м ' dsv/1032003_1.jpg
+convert dsv/1032003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 25 300 p. ' dsv/1032003_1.jpg
+convert dsv/1032004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Гранада 3.2м ' dsv/1032004_1.jpg
+convert dsv/1032004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 25 300 p. ' dsv/1032004_1.jpg
+convert bts/1033001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Багира 3.3м ' bts/1033001_1.jpg
+convert bts/1033001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 17 950 p. ' bts/1033001_1.jpg
+convert bts/1033002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Багира 3.3м ' bts/1033002_1.jpg
+convert bts/1033002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 17 950 p. ' bts/1033002_1.jpg
+convert bts/1034001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Венеция 3.4м ' bts/1034001_1.jpg
+convert bts/1034001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 20 850 p. ' bts/1034001_1.jpg
+convert bts/1034002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Венеция 3.4м ' bts/1034002_1.jpg
+convert bts/1034002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 20 850 p. ' bts/1034002_1.jpg
+convert gorizont/1036001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Виго 3.6м ' gorizont/1036001_1.jpg
+convert gorizont/1036001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 24 500 p. ' gorizont/1036001_1.jpg
+convert gorizont/1036002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Сапфир 3.6м ' gorizont/1036002_1.jpg
+convert gorizont/1036002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 16 800 p. ' gorizont/1036002_1.jpg
+convert gorizont/1036003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Ливерпуль 3.6м ' gorizont/1036003_1.jpg
+convert gorizont/1036003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 22 990 p. ' gorizont/1036003_1.jpg
+convert gorizont/1036004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Ливерпуль 3.6м ' gorizont/1036004_1.jpg
+convert gorizont/1036004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 22 990 p. ' gorizont/1036004_1.jpg
+convert gorizont/1039001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Бордо 3.9м ' gorizont/1039001_1.jpg
+convert gorizont/1039001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 19 580 p. ' gorizont/1039001_1.jpg
+convert gorizont/1039002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Бордо 3.9м ' gorizont/1039002_1.jpg
+convert gorizont/1039002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 19 580 p. ' gorizont/1039002_1.jpg
+convert gorizont/1039003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Бордо 3.9м ' gorizont/1039003_1.jpg
+convert gorizont/1039003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 19 580 p. ' gorizont/1039003_1.jpg
+convert bts/1200001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая Ева ' bts/1200001_1.jpg
+convert bts/1200001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 7 600 p. ' bts/1200001_1.jpg
+convert bts/1200002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Зеркало Ева ЕС-01 ' bts/1200002_1.jpg
+convert bts/1200002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 000 p. ' bts/1200002_1.jpg
+convert bts/1200003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Вешалка Ева ЕС-02 ' bts/1200003_1.jpg
+convert bts/1200003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 600 p. ' bts/1200003_1.jpg
+convert bts/1200004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Полка Ева ЕУ-01 ' bts/1200004_1.jpg
+convert bts/1200004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 400 p. ' bts/1200004_1.jpg
+convert bts/1200005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Пенал Ева ЕП-02 ' bts/1200005_1.jpg
+convert bts/1200005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 000 p. ' bts/1200005_1.jpg
+convert bts/1200006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Пенал Ева ЕП-01 ' bts/1200006_1.jpg
+convert bts/1200006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 300 p. ' bts/1200006_1.jpg
+convert bts/1212001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.2м Ксения-2 ' bts/1212001_1.jpg
+convert bts/1212001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 5 850 p. ' bts/1212001_1.jpg
+convert bts/1212002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.2м Лира ' bts/1212002_1.jpg
+convert bts/1212002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 7 000 p. ' bts/1212002_1.jpg
+convert dsv/1212003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.2м Леон ' dsv/1212003_1.jpg
+convert dsv/1212003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 890 p. ' dsv/1212003_1.jpg
+convert bts/1215001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.5м Ксения-1 ' bts/1215001_1.jpg
+convert bts/1215001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 7 200 p. ' bts/1215001_1.jpg
+convert bts/1215002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.5м Стелла ' bts/1215002_1.jpg
+convert bts/1215002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 600 p. ' bts/1215002_1.jpg
+convert bts/1215003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.5м Карина ' bts/1215003_1.jpg
+convert bts/1215003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 800 p. ' bts/1215003_1.jpg
+convert bts/1213001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.3м Мила ' bts/1213001_1.jpg
+convert bts/1213001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 900 p. ' bts/1213001_1.jpg
+convert bts/1215004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.5м Граф ' bts/1215004_1.jpg
+convert bts/1215004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 700 p. ' bts/1215004_1.jpg
+convert gorizont/1213002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.3м Танго-1 ' gorizont/1213002_1.jpg
+convert gorizont/1213002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 700 p. ' gorizont/1213002_1.jpg
+convert gorizont/1216001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Прихожая 1.6м Танго-2 ' gorizont/1216001_1.jpg
+convert gorizont/1216001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 900 p. ' gorizont/1216001_1.jpg
+convert bts/2001601_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Буфет 1.6м Палермо ' bts/2001601_1.jpg
+convert bts/2001601_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 500 p. ' bts/2001601_1.jpg
+convert bts/2001602_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Буфет 1.6м Палермо ' bts/2001602_1.jpg
+convert bts/2001602_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 500 p. ' bts/2001602_1.jpg
+convert bts/2001603_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Буфет 1.6м Палермо ' bts/2001603_1.jpg
+convert bts/2001603_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 500 p. ' bts/2001603_1.jpg
+convert bts/2001604_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Буфет 1.6м Палермо ' bts/2001604_1.jpg
+convert bts/2001604_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 500 p. ' bts/2001604_1.jpg
+convert bts/2001605_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Буфет 1.6м Палермо ' bts/2001605_1.jpg
+convert bts/2001605_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 500 p. ' bts/2001605_1.jpg
+convert bts/2001606_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.6м Катя-2 ' bts/2001606_1.jpg
+convert bts/2001606_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 5 700 p. ' bts/2001606_1.jpg
+convert bts/2001607_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.6м Кофе ' bts/2001607_1.jpg
+convert bts/2001607_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 700 p. ' bts/2001607_1.jpg
+convert bts/2001608_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.6м Лондон ' bts/2001608_1.jpg
+convert bts/2001608_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 700 p. ' bts/2001608_1.jpg
+convert bts/2001609_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.6м Орхидея ' bts/2001609_1.jpg
+convert bts/2001609_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 700 p. ' bts/2001609_1.jpg
+convert dsv/2001610_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.6м Флора ' dsv/2001610_1.jpg
+convert dsv/2001610_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 500 p. ' dsv/2001610_1.jpg
+convert dsv/2001611_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.6м Гранат ' dsv/2001611_1.jpg
+convert dsv/2001611_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 500 p. ' dsv/2001611_1.jpg
+convert dsv/2001801_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.8м Флора ' dsv/2001801_1.jpg
+convert dsv/2001801_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 16 960 p. ' dsv/2001801_1.jpg
+convert bts/2001802_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.8м Фруттис ' bts/2001802_1.jpg
+convert bts/2001802_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 950 p. ' bts/2001802_1.jpg
+convert bts/2001803_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.8м Персик ' bts/2001803_1.jpg
+convert bts/2001803_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 500 p. ' bts/2001803_1.jpg
+convert bts/2001804_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.8м Сакура ' bts/2001804_1.jpg
+convert bts/2001804_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 500 p. ' bts/2001804_1.jpg
+convert bts/2001805_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.8м Яблоко ' bts/2001805_1.jpg
+convert bts/2001805_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 500 p. ' bts/2001805_1.jpg
+convert dsv/2001806_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.8м Лайм ' dsv/2001806_1.jpg
+convert dsv/2001806_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 16 960 p. ' dsv/2001806_1.jpg
+convert bts/2001807_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.8м Ягода ' bts/2001807_1.jpg
+convert bts/2001807_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 950 p. ' bts/2001807_1.jpg
+convert bts/2001808_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 1.8м Мед ' bts/2001808_1.jpg
+convert bts/2001808_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 950 p. ' bts/2001808_1.jpg
+convert bts/2002001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2м Катя ' bts/2002001_1.jpg
+convert bts/2002001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 520 p. ' bts/2002001_1.jpg
+convert dsv/2002002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2м Флора ' dsv/2002002_1.jpg
+convert dsv/2002002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 17 920 p. ' dsv/2002002_1.jpg
+convert dsv/2002003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2м Татьяна ' dsv/2002003_1.jpg
+convert dsv/2002003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 180 p. ' dsv/2002003_1.jpg
+convert dsv/2002004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2м Татьяна ' dsv/2002004_1.jpg
+convert dsv/2002004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 180 p. ' dsv/2002004_1.jpg
+convert dsv/2002005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2м Маша ' dsv/2002005_1.jpg
+convert dsv/2002005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 180 p. ' dsv/2002005_1.jpg
+convert bts/2002006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2м Апельсин ' bts/2002006_1.jpg
+convert bts/2002006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 700 p. ' bts/2002006_1.jpg
+convert bts/2002007_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2м Индиго ' bts/2002007_1.jpg
+convert bts/2002007_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 700 p. ' bts/2002007_1.jpg
+convert bts/2002008_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня Люкс 2м Акварель ' bts/2002008_1.jpg
+convert bts/2002008_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 300 p. ' bts/2002008_1.jpg
+convert bts/2002009_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня Люкс 2м Ирис ' bts/2002009_1.jpg
+convert bts/2002009_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 300 p. ' bts/2002009_1.jpg
+convert bts/2002010_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня Люкс 2м Лазурь ' bts/2002010_1.jpg
+convert bts/2002010_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 300 p. ' bts/2002010_1.jpg
+convert bts/2002011_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня Люкс 2м Лоза ' bts/2002011_1.jpg
+convert bts/2002011_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 300 p. ' bts/2002011_1.jpg
+convert bts/2002012_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня Люкс 2м Шоколад ' bts/2002012_1.jpg
+convert bts/2002012_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 300 p. ' bts/2002012_1.jpg
+convert bts/2002013_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня Люкс 2м Прима ' bts/2002013_1.jpg
+convert bts/2002013_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 300 p. ' bts/2002013_1.jpg
+convert bts/2021001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Олива ' bts/2021001_1.jpg
+convert bts/2021001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 600 p. ' bts/2021001_1.jpg
+convert bts/2021002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Клубника ' bts/2021002_1.jpg
+convert bts/2021002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 600 p. ' bts/2021002_1.jpg
+convert bts/2200001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухонный уголок Жасмин ' bts/2200001_1.jpg
+convert bts/2200001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 800 p. ' bts/2200001_1.jpg
+convert bts/2200002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухонный уголок Чикаго ' bts/2200002_1.jpg
+convert bts/2200002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 800 p. ' bts/2200002_1.jpg
+convert bts/2200003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кухонный уголок Эффект ' bts/2200003_1.jpg
+convert bts/2200003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 800 p. ' bts/2200003_1.jpg
+convert dsv/3000001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Бася ' dsv/3000001_1.jpg
+convert dsv/3000001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 22 000 p. ' dsv/3000001_1.jpg
+convert bts/1030002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Винтаж ' bts/1030002_1.jpg
+convert bts/1030002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 26 600 p. ' bts/1030002_1.jpg
+convert bts/3100001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Саломея ' bts/3100001_1.jpg
+convert bts/3100001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 17 200 p. ' bts/3100001_1.jpg
+convert bts/3100002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Лилия ' bts/3100002_1.jpg
+convert bts/3100002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 28 100 p. ' bts/3100002_1.jpg
+convert bts/3100003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Модерн ' bts/3100003_1.jpg
+convert bts/3100003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 19 200 p. ' bts/3100003_1.jpg
+convert bts/3100004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Николь ' bts/3100004_1.jpg
+convert bts/3100004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 26 700 p. ' bts/3100004_1.jpg
+convert bts/3100005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Сакура ' bts/3100005_1.jpg
+convert bts/3100005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 19 700 p. ' bts/3100005_1.jpg
+convert bts/3100006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Фиеста ' bts/3100006_1.jpg
+convert bts/3100006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 000 p. ' bts/3100006_1.jpg
+convert dsv/3100007_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Спальня Ронда ' dsv/3100007_1.jpg
+convert dsv/3100007_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 550 p. ' dsv/3100007_1.jpg
+convert bts/3200001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Стеллаж ' bts/3200001_1.jpg
+convert bts/3200001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 900 p. ' bts/3200001_1.jpg
+convert bts/3200002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Стеллаж ' bts/3200002_1.jpg
+convert bts/3200002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 900 p. ' bts/3200002_1.jpg
+convert bts/3206001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 0.6м c ящиками Ева ЕШ-03 ' bts/3206001_1.jpg
+convert bts/3206001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 700 p. ' bts/3206001_1.jpg
+convert bts/3208001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 0.8м платяной Ева ЕШ-01 ' bts/3208001_1.jpg
+convert bts/3208001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 300 p. ' bts/3208001_1.jpg
+convert bts/3208002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 0.8м 2-х створчатый ' bts/3208002_1.jpg
+convert bts/3208002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 700 p. ' bts/3208002_1.jpg
+convert bts/3208002_2.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 0.8м 2-х створчатый ' bts/3208002_2.jpg
+convert bts/3208002_2.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 700 p. ' bts/3208002_2.jpg
+convert bts/3208003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 0.8м Белла 2-х створчатый ' bts/3208003_1.jpg
+convert bts/3208003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 5 200 p. ' bts/3208003_1.jpg
+convert bts/3208004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 0.8м Сакура бельевой 2-х створчатый ' bts/3208004_1.jpg
+convert bts/3208004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 7 100 p. ' bts/3208004_1.jpg
+convert bts/3212001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 1.2м Белла 3-х створчатый ' bts/3212001_1.jpg
+convert bts/3212001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 7 800 p. ' bts/3212001_1.jpg
+convert bts/3212002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 1.2м Фиеста 3-х створчатый ' bts/3212002_1.jpg
+convert bts/3212002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 300 p. ' bts/3212002_1.jpg
+convert bts/3212003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 1.29м 3-х створчатый ' bts/3212003_1.jpg
+convert bts/3212003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 7 400 p. ' bts/3212003_1.jpg
+convert bts/3212003_2.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 1.29м 3-х створчатый ' bts/3212003_2.jpg
+convert bts/3212003_2.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 7 400 p. ' bts/3212003_2.jpg
+convert bts/3215001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 1.5м Николь 3-х створчатый ' bts/3215001_1.jpg
+convert bts/3215001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 800 p. ' bts/3215001_1.jpg
+convert bts/3216001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 1.6м Фиеста 4-х створчатый ' bts/3216001_1.jpg
+convert bts/3216001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 800 p. ' bts/3216001_1.jpg
+convert bts/3216002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 1.6м Саломея ' bts/3216002_1.jpg
+convert bts/3216002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 400 p. ' bts/3216002_1.jpg
+convert bts/3216003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф 1.6м Лилия ' bts/3216003_1.jpg
+convert bts/3216003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 700 p. ' bts/3216003_1.jpg
+convert bts/3290001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф угловой Ева ЕШ-02 ' bts/3290001_1.jpg
+convert bts/3290001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 900 p. ' bts/3290001_1.jpg
+convert bts/3290002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф угловой Модерн ' bts/3290002_1.jpg
+convert bts/3290002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 300 p. ' bts/3290002_1.jpg
+convert bts/3290003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф угловой Сакура ' bts/3290003_1.jpg
+convert bts/3290003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 400 p. ' bts/3290003_1.jpg
+convert bts/3290004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф угловой Фиеста ' bts/3290004_1.jpg
+convert bts/3290004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 300 p. ' bts/3290004_1.jpg
+convert bts/3313001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе Модерн ' bts/3313001_1.jpg
+convert bts/3313001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 100 p. ' bts/3313001_1.jpg
+convert bts/3311002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.14м Сакура ' bts/3311002_1.jpg
+convert bts/3311002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 7 500 p. ' bts/3311002_1.jpg
+convert bts/3313002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе Модерн-2 ' bts/3313002_1.jpg
+convert bts/3313002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 700 p. ' bts/3313002_1.jpg
+convert bts/3313003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе Модерн Люкс ' bts/3313003_1.jpg
+convert bts/3313003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 12 200 p. ' bts/3313003_1.jpg
+convert dsv/3313004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.3м Бася ' dsv/3313004_1.jpg
+convert dsv/3313004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 200 p. ' dsv/3313004_1.jpg
+convert dsv/3313004_2.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.3м Бася ' dsv/3313004_2.jpg
+convert dsv/3313004_2.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 200 p. ' dsv/3313004_2.jpg
+convert dsv/3313004_3.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.3м Бася ' dsv/3313004_3.jpg
+convert dsv/3313004_3.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 200 p. ' dsv/3313004_3.jpg
+convert bts/3315004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.5м Николь ' bts/3315004_1.jpg
+convert bts/3315004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 12 100 p. ' bts/3315004_1.jpg
+convert bts/3315005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.5м Сакура ' bts/3315005_1.jpg
+convert bts/3315005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 10 500 p. ' bts/3315005_1.jpg
+convert bts/3316004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.65м Мираж зеркальный ' bts/3316004_1.jpg
+convert bts/3316004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 600 p. ' bts/3316004_1.jpg
+convert bts/3316005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.65м Мираж сити ' bts/3316005_1.jpg
+convert bts/3316005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 200 p. ' bts/3316005_1.jpg
+convert bts/3316006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.65м Мираж лайт ' bts/3316006_1.jpg
+convert bts/3316006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 17 500 p. ' bts/3316006_1.jpg
+convert bts/1070020_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.6м Винтаж ' bts/1070020_1.jpg
+convert bts/1070020_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 600 p. ' bts/1070020_1.jpg
+convert bts/3317001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.7м Маэстро ' bts/3317001_1.jpg
+convert bts/3317001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 12 400 p. ' bts/3317001_1.jpg
+convert dsv/3317002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.7м Фортуна ' dsv/3317002_1.jpg
+convert dsv/3317002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 000 p. ' dsv/3317002_1.jpg
+convert dsv/3317002_2.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.7м Фортуна ' dsv/3317002_2.jpg
+convert dsv/3317002_2.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 000 p. ' dsv/3317002_2.jpg
+convert dsv/3317002_3.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф-купе 1.7м Фортуна ' dsv/3317002_3.jpg
+convert dsv/3317002_3.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 000 p. ' dsv/3317002_3.jpg
+convert bts/3400001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Стандарт-1 ' bts/3400001_1.jpg
+convert bts/3400001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 600 p. ' bts/3400001_1.jpg
+convert bts/3400002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Стандарт-2 ' bts/3400002_1.jpg
+convert bts/3400002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 000 p. ' bts/3400002_1.jpg
+convert bts/3400003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Стандарт-3 ' bts/3400003_1.jpg
+convert bts/3400003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 100 p. ' bts/3400003_1.jpg
+convert bts/3400004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Стандарт-4 ' bts/3400004_1.jpg
+convert bts/3400004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 000 p. ' bts/3400004_1.jpg
+convert bts/3400005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Стандарт-5 ' bts/3400005_1.jpg
+convert bts/3400005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 100 p. ' bts/3400005_1.jpg
+convert bts/3400006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Стандарт-6 ' bts/3400006_1.jpg
+convert bts/3400006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 300 p. ' bts/3400006_1.jpg
+convert bts/3400007_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Грация ' bts/3400007_1.jpg
+convert bts/3400007_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 000 p. ' bts/3400007_1.jpg
+convert bts/3400008_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Саломея ' bts/3400008_1.jpg
+convert bts/3400008_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 400 p. ' bts/3400008_1.jpg
+convert bts/3400009_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Лилия ' bts/3400009_1.jpg
+convert bts/3400009_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 900 p. ' bts/3400009_1.jpg
+convert bts/3400010_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Модерн ' bts/3400010_1.jpg
+convert bts/3400010_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 900 p. ' bts/3400010_1.jpg
+convert bts/3400011_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Николь ' bts/3400011_1.jpg
+convert bts/3400011_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 700 p. ' bts/3400011_1.jpg
+convert bts/3400012_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Сакура ' bts/3400012_1.jpg
+convert bts/3400012_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 500 p. ' bts/3400012_1.jpg
+convert bts/3400013_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод 400 Фиеста ' bts/3400013_1.jpg
+convert bts/3400013_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 400 p. ' bts/3400013_1.jpg
+convert bts/3400014_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод 850 Фиеста ' bts/3400014_1.jpg
+convert bts/3400014_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 300 p. ' bts/3400014_1.jpg
+convert bts/1050015_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Комод Винтаж ' bts/1050015_1.jpg
+convert bts/1050015_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 400 p. ' bts/1050015_1.jpg
+convert bts/3490001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Косметический стол Саломея ' bts/3490001_1.jpg
+convert bts/3490001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 000 p. ' bts/3490001_1.jpg
+convert bts/3490002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Косметический стол Лилия ' bts/3490002_1.jpg
+convert bts/3490002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 5 900 p. ' bts/3490002_1.jpg
+convert bts/3490003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Косметический стол Сакура ' bts/3490003_1.jpg
+convert bts/3490003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 000 p. ' bts/3490003_1.jpg
+convert bts/3490004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Косметический стол Фиеста ' bts/3490004_1.jpg
+convert bts/3490004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 1 700 p. ' bts/3490004_1.jpg
+convert bts/3514001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кровать Модерн ' bts/3514001_1.jpg
+convert bts/3514001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 200 p. ' bts/3514001_1.jpg
+convert bts/3514002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кровать Николь ' bts/3514002_1.jpg
+convert bts/3514002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 6 200 p. ' bts/3514002_1.jpg
+convert bts/3514003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кровать Сакура с ящиками ' bts/3514003_1.jpg
+convert bts/3514003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 5 700 p. ' bts/3514003_1.jpg
+convert bts/3514004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кровать Фиеста ' bts/3514004_1.jpg
+convert bts/3514004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 400 p. ' bts/3514004_1.jpg
+convert bts/3516005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кровать 1.6м Саломея ' bts/3516005_1.jpg
+convert bts/3516005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 400 p. ' bts/3516005_1.jpg
+convert bts/3516006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кровать 1.6м Лилия ' bts/3516006_1.jpg
+convert bts/3516006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 500 p. ' bts/3516006_1.jpg
+convert bts/1040013_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кровать 1.6м Винтаж ' bts/1040013_1.jpg
+convert bts/1040013_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 200 p. ' bts/1040013_1.jpg
+convert bts/3500001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Тумбы Саломея БТ-1 (2шт.)  ' bts/3500001_1.jpg
+convert bts/3500001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 000 p. ' bts/3500001_1.jpg
+convert bts/3500002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Тумбы Лилия (2шт.)  ' bts/3500002_1.jpg
+convert bts/3500002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 700 p. ' bts/3500002_1.jpg
+convert bts/3500003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Тумбы Модерн (2шт.)  ' bts/3500003_1.jpg
+convert bts/3500003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 600 p. ' bts/3500003_1.jpg
+convert bts/3500004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Тумбы Сакура (2шт.)  ' bts/3500004_1.jpg
+convert bts/3500004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 400 p. ' bts/3500004_1.jpg
+convert bts/3500005_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Тумбы Фиеста (2шт.)  ' bts/3500005_1.jpg
+convert bts/3500005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 400 p. ' bts/3500005_1.jpg
+convert bts/3500006_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Тумба Николь ' bts/3500006_1.jpg
+convert bts/3500006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 800 p. ' bts/3500006_1.jpg
+convert bts/1050026_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Тумбы Винтаж (2шт.)  ' bts/1050026_1.jpg
+convert bts/1050026_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 400 p. ' bts/1050026_1.jpg
+convert bts/3501001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Зеркало Саломея БЗ-1 ' bts/3501001_1.jpg
+convert bts/3501001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 1 200 p. ' bts/3501001_1.jpg
+convert bts/3501002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Зеркало Фиеста ' bts/3501002_1.jpg
+convert bts/3501002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 1 200 p. ' bts/3501002_1.jpg
+convert bts/3204001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Пенал Модерн ' bts/3204001_1.jpg
+convert bts/3204001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 800 p. ' bts/3204001_1.jpg
+convert bts/3204002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Пенал Сакура ' bts/3204002_1.jpg
+convert bts/3204002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 4 000 p. ' bts/3204002_1.jpg
+convert bts/3204003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Пенал Фиеста ' bts/3204003_1.jpg
+convert bts/3204003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 700 p. ' bts/3204003_1.jpg
+convert bts/3201001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Угловое завершение Сакура ' bts/3201001_1.jpg
+convert bts/3201001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 400 p. ' bts/3201001_1.jpg
+convert bts/5000002_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Пенал Бемби-1 ' bts/5000002_1.jpg
+convert bts/5000002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 000 p. ' bts/5000002_1.jpg
+convert bts/5000003_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Стол Бемби-1 ' bts/5000003_1.jpg
+convert bts/5000003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 3 100 p. ' bts/5000003_1.jpg
+convert bts/5000004_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Шкаф Бемби-1 ' bts/5000004_1.jpg
+convert bts/5000004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 5 300 p. ' bts/5000004_1.jpg
+convert bts/5100001_1.jpg -gravity SouthWest -fill '#ffffffb0' -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' Кровать Бемби-1 ' bts/5100001_1.jpg
+convert bts/5100001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 600 p. ' bts/5100001_1.jpg

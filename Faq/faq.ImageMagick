@@ -62,13 +62,12 @@ $ find . -iregex '.*.jpg' -exec convert -fill "#ffffffb0" -box '#f0404080' -font
 $ find . -iregex '.*.jpg' -exec convert -fill "#ffffff" -box '#f04040e0' -font URW-Gothic-Book -gravity NorthEast -pointsize 40 -annotate 0 ' 9 950 p. ' {} {} \;
 
 
-$ convert 1215001_4.jpg \
--gravity SouthWest -fill "#ffffffb0" -box '#f0404080' -font Impact  -pointsize 50 -annotate 0 ' САКУРА туалетный столик ' \
--gravity NorthEast -fill "#ffffff" -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 950 p. ' 1215001_4.jpg
-
+$ convert bts/1215001_4.jpg \
+-gravity SouthWest -fill "#ffffffb0" -box '#f0404080' -font Impact -pointsize 50 -annotate 0 ' САКУРА туалетный столик ' \
+-gravity NorthEast -fill "#ffffff" -box '#f04040e0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 9 950 p. ' bts/1215001_4.jpg
 
 -----------------обрезать все изображения до 250x100 отцентровав по центру
-find -name "*.jpg" -exec convert -resize '250x100^' -gravity center -crop 250x100+0+0  {} {} \;
+find -name "*.jpg" -exec convert -resize '250x100^' -gravity center -crop 250x100+0+0 {} {} \;
 
 -----------------изминение размеров если картинка больше
 convert src.gif -resize "400x400>" dst.gif
