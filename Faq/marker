@@ -281,6 +281,73 @@ convert bts/2021001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -f
 convert bts/2021001_0.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 40 -annotate 0 ' Кухня 2.1м ' bts/2021001_0.jpg
 convert bts/2021002_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Клубника ' bts/2021002_1.jpg
 convert bts/2021002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 14 600 p. ' bts/2021002_1.jpg
+convert dsv/2021003_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Лайм ' dsv/2021003_1.jpg
+convert dsv/2021003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 200 p. ' dsv/2021003_1.jpg
+convert dsv/2021004_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Гранат ' dsv/2021004_1.jpg
+convert dsv/2021004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 200 p. ' dsv/2021004_1.jpg
+convert dsv/2021005_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Абрикос ' dsv/2021005_1.jpg
+convert dsv/2021005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 15 200 p. ' dsv/2021005_1.jpg
+convert dsv/2021006_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Монако ' dsv/2021006_1.jpg
+convert dsv/2021006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 800 p. ' dsv/2021006_1.jpg
+convert dsv/2021008_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Олива ' dsv/2021008_1.jpg
+convert dsv/2021008_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 800 p. ' dsv/2021008_1.jpg
+convert dsv/2021009_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Олива ' dsv/2021009_1.jpg
+convert dsv/2021009_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 800 p. ' dsv/2021009_1.jpg
+convert dsv/2021010_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Олива ' dsv/2021010_1.jpg
+convert dsv/2021010_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 800 p. ' dsv/2021010_1.jpg
+convert dsv/2021011_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Олива ' dsv/2021011_1.jpg
+convert dsv/2021011_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 800 p. ' dsv/2021011_1.jpg
+convert dsv/2021012_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Олива ' dsv/2021012_1.jpg
+convert dsv/2021012_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 800 p. ' dsv/2021012_1.jpg
+convert dsv/2021013_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Олива ' dsv/2021013_1.jpg
+convert dsv/2021013_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 11 800 p. ' dsv/2021013_1.jpg
+convert dsv/2021014_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.1м Флора ' dsv/2021014_1.jpg
+convert dsv/2021014_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 13 580 p. ' dsv/2021014_1.jpg
+convert dsv/2100001_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 3м Настя (модульная)  ' dsv/2100001_1.jpg
+convert dsv/2100001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 27 390 p. ' dsv/2100001_1.jpg
+convert dsv/2100001_0.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 40 -annotate 0 ' Набор мебели для Кухни ' dsv/2100001_0.jpg
+convert dsv/2100002_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.6м Империя (модульная)  ' dsv/2100002_1.jpg
+convert dsv/2100002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 18 330 p. ' dsv/2100002_1.jpg
+convert dsv/2100003_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 3м Империя (модульная)  ' dsv/2100003_1.jpg
+convert dsv/2100003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 20 590 p. ' dsv/2100003_1.jpg
+convert dsv/2100005_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.8м Монако (модульная)  ' dsv/2100005_1.jpg
+convert dsv/2100005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 20 460 p. ' dsv/2100005_1.jpg
+convert dsv/2100007_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 3.6м Монако (модульная)  ' dsv/2100007_1.jpg
+convert dsv/2100007_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 27 350 p. ' dsv/2100007_1.jpg
+convert dsv/2100008_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 3.6м Монако (модульная)  ' dsv/2100008_1.jpg
+convert dsv/2100008_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 27 350 p. ' dsv/2100008_1.jpg
+convert dsv/2100009_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.2м Олива (модульная)  ' dsv/2100009_1.jpg
+convert dsv/2100009_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 23 490 p. ' dsv/2100009_1.jpg
+convert dsv/2100010_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 3м Олива (модульная)  ' dsv/2100010_1.jpg
+convert dsv/2100010_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 32 080 p. ' dsv/2100010_1.jpg
+convert dsv/2100011_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 2.2м Олива (модульная)  ' dsv/2100011_1.jpg
+convert dsv/2100011_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 23 490 p. ' dsv/2100011_1.jpg
+convert dsv/2100012_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 3м Олива (модульная)  ' dsv/2100012_1.jpg
+convert dsv/2100012_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 32 080 p. ' dsv/2100012_1.jpg
+convert dsv/2100013_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухня 3м Олива (модульная)  ' dsv/2100013_1.jpg
+convert dsv/2100013_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 32 080 p. ' dsv/2100013_1.jpg
+convert dsv/2190001_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Настя угловая ' dsv/2190001_1.jpg
+convert dsv/2190001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 26 260 p. ' dsv/2190001_1.jpg
+convert dsv/2190002_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Империя угловая ' dsv/2190002_1.jpg
+convert dsv/2190002_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 31 430 p. ' dsv/2190002_1.jpg
+convert dsv/2190003_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Империя угловая ' dsv/2190003_1.jpg
+convert dsv/2190003_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 31 430 p. ' dsv/2190003_1.jpg
+convert dsv/2190004_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Монако угловая ' dsv/2190004_1.jpg
+convert dsv/2190004_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 38 780 p. ' dsv/2190004_1.jpg
+convert dsv/2190005_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Монако угловая ' dsv/2190005_1.jpg
+convert dsv/2190005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 38 780 p. ' dsv/2190005_1.jpg
+convert dsv/2190006_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Флора угловая ' dsv/2190006_1.jpg
+convert dsv/2190006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 42 580 p. ' dsv/2190006_1.jpg
+convert dsv/2190007_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Олива угловая ' dsv/2190007_1.jpg
+convert dsv/2190007_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 37 950 p. ' dsv/2190007_1.jpg
+convert dsv/2190008_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Олива угловая ' dsv/2190008_1.jpg
+convert dsv/2190008_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 37 950 p. ' dsv/2190008_1.jpg
+convert dsv/2190009_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Олива угловая ' dsv/2190009_1.jpg
+convert dsv/2190009_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 35 260 p. ' dsv/2190009_1.jpg
+convert dsv/2190010_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Олива угловая ' dsv/2190010_1.jpg
+convert dsv/2190010_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 35 260 p. ' dsv/2190010_1.jpg
+convert dsv/2190011_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Модульная Кухня Олива угловая ' dsv/2190011_1.jpg
+convert dsv/2190011_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 35 260 p. ' dsv/2190011_1.jpg
 convert bts/2200001_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Кухонный уголок Жасмин ' bts/2200001_1.jpg
 convert bts/2200001_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 8 800 p. ' bts/2200001_1.jpg
 convert bts/2200001_2.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 40 -annotate 0 ' Кухонный уголок Жасмин ' bts/2200001_2.jpg
@@ -530,7 +597,6 @@ convert bts/3500005_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -f
 convert bts/3500005_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 400 p. ' bts/3500005_1.jpg
 convert bts/3500006_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Тумба Николь ' bts/3500006_1.jpg
 convert bts/3500006_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 800 p. ' bts/3500006_1.jpg
-convert bts/3400011_3.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 40 -annotate 0 ' Тумба Николь ' bts/3400011_3.jpg
 convert bts/1050026_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Тумбы Винтаж (2шт.)  ' bts/1050026_1.jpg
 convert bts/1050026_1.jpg -gravity NorthEast -fill '#ffffff' -box '#6ad4ffd0' -font URW-Gothic-Book -pointsize 40 -annotate 0 ' 2 400 p. ' bts/1050026_1.jpg
 convert bts/3501001_1.jpg -gravity SouthWest -fill '#ffffff' -box '#6ad4ffd0' -font Impact -pointsize 50 -annotate 0 ' Зеркало Саломея БЗ-1 ' bts/3501001_1.jpg
