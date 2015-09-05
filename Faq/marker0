@@ -1,64 +1,12 @@
 #!/bin/bash
-# ЕВА
-convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +75+50 ' угл. заверш ' 1200001_0.jpg
-convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +285+50 ' шкаф плат ' 1200001_0.jpg
-convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +610+50 ' шкаф с ящ ' 1200001_0.jpg
-convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +925+50 ' шкаф углов ' 1200001_0.jpg
-convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +135+850 ' зеркало ' 1200001_0.jpg
-convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +440+840 ' вешалка ' 1200001_0.jpg
-convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +775+840 ' пенал ' 1200001_0.jpg
-convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +1010+870 ' пенал откр ' 1200001_0.jpg
-# ВИНТАЖ
-convert 1030002_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +720+80 ' шкаф ' 1030002_0.jpg
-convert 1030002_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +235+860 ' кровать ' 1030002_0.jpg
-convert 1030002_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +620+760 ' тумба ' 1030002_0.jpg
-convert 1030002_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +920+530 ' комод ' 1030002_0.jpg
-# САЛОМЕЯ
-convert 3100001_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +60+485 ' шкаф 4х створ ' 3100001_2.jpg
-convert 3100001_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +920+100 ' зеркало ' 3100001_2.jpg
-convert 3100001_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +920+320 ' косм стол ' 3100001_2.jpg
-convert 3100001_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +235+840 ' кровать ' 3100001_2.jpg
-convert 3100001_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +575+830 ' комод ' 3100001_2.jpg
-convert 3100001_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +980+815 ' тумба ' 3100001_2.jpg
-# ЛИЛИЯ
-convert 3100002_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +165+90 ' косм стол ' 3100002_2.jpg
-convert 3100002_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +990+160 ' шкаф ' 3100002_2.jpg
-convert 3100002_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +120+620 ' тумба ' 3100002_2.jpg
-convert 3100002_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +570+600 ' комод ' 3100002_2.jpg
-convert 3100002_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +990+500 ' кровать ' 3100002_2.jpg
-# МОДЕРН
-convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +480+410 ' шкаф-купе ' 3100003_3.jpg
-convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +970+400 ' шкаф угловой ' 3100003_3.jpg
-convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +75+830 ' пенал ' 3100003_3.jpg
-convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +480+870 ' угловое заверш ' 3100003_3.jpg
-convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +510+590 ' тумбы ' 3100003_3.jpg
-convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +830+520 ' комод ' 3100003_3.jpg
-convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +970+810 ' кровать ' 3100003_3.jpg
-# НИКОЛЬ
-convert 3100004_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +330+417 ' шкаф-купе ' 3100004_3.jpg
-convert 3100004_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +660+420 ' шкаф 3х створч ' 3100004_3.jpg
-convert 3100004_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +340+810 ' комод ' 3100004_3.jpg
-convert 3100004_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +415+725 ' тумбы ' 3100004_3.jpg
-convert 3100004_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +930+840 ' кровать ' 3100004_3.jpg
-# САКУРА
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +100+100 ' 2х створчат ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +320+100 ' шкаф-купе ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +590+100 ' шкаф-купе 1,5 ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +940+100 ' шк угловой ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +100+820 ' пенал ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +255+820 ' углов зав ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +450+750 ' кровать ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +660+793 ' тумбы ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +800+820 ' косм стол ' 3100005_2.jpg
-convert 3100005_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +1000+820 ' комод ' 3100005_2.jpg
-# ФИЕСТА
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +140+52 ' 3х створчат ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +495+52 ' 4х створч ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +980+100 ' кровать ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +140+865 ' шк угловой ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +495+865 ' пенал ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +765+400 ' тумбы ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +730+802 ' комод 850 ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +880+835 ' комод 400 ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +1050+400 ' зеркало ' 3100006_2.jpg
-convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Impact -pointsize 30 -annotate +1050+865 ' косм стол ' 3100006_2.jpg
+convert 1200001_0.jpg -gravity SouthWest -fill '#ffffff' -box '#6633ffd0' -font Impact -pointsize 40 -annotate 0 ' Прихожая Ева ' 1200001_0.jpg
+convert 1200001_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Droid-Sans -pointsize 25 -annotate +135+840 ' 21 000 тг.' 1200001_0.jpg
+convert 1030002_0.jpg -gravity SouthWest -fill '#ffffff' -box '#6633ffd0' -font Impact -pointsize 40 -annotate 0 ' Спальня Винтаж ' 1030002_0.jpg
+convert 1030002_0.jpg -fill '#ffffff' -box '#6633ffc0' -font Droid-Sans -pointsize 25 -annotate +275+830 ' 17 200 тг.' 1030002_0.jpg
+convert 3100003_3.jpg -gravity SouthWest -fill '#ffffff' -box '#6633ffd0' -font Impact -pointsize 30 -annotate 0 ' Спальня Модерн ' 3100003_3.jpg
+convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Droid-Sans -pointsize 25 -annotate +150+445 ' 50 000 ' 3100003_3.jpg
+convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Droid-Sans -pointsize 25 -annotate +245+445 ' 52 800 ' 3100003_3.jpg
+convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Droid-Sans -pointsize 25 -annotate +340+445 ' 55 000 ' 3100003_3.jpg
+convert 3100003_3.jpg -fill '#ffffff' -box '#6633ffc0' -font Droid-Sans -pointsize 25 -annotate +435+445 ' 57 200 тг.' 3100003_3.jpg
+convert 3100006_2.jpg -gravity SouthWest -fill '#ffffff' -box '#6633ffd0' -font Impact -pointsize 40 -annotate 0 ' Спальня Фиеста ' 3100006_2.jpg
+convert 3100006_2.jpg -fill '#ffffff' -box '#6633ffc0' -font Droid-Sans -pointsize 25 -annotate +40+825 ' 32 800 тг.' 3100006_2.jpg
