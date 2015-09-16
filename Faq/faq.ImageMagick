@@ -58,10 +58,8 @@ $ convert -background '#6ad4ff' -fill white -font Impact -pointsize 103 label:' 
 $ convert -background '#00000000' -fill '#f13340' -font Impact -pointsize 2900 label:' stock-price  ru ' wm1.png
 $ convert -rotate '-4' wm1.png wm_new.png
 
-
-
-
 $ find . -iregex '.*.jpg' -exec composite -dissolve 50% -gravity NorthWest ~/wm.png {} {} \;
+
 
 
 -----------------обрезать все изображения до 250x100 отцентровав по центру
@@ -76,5 +74,10 @@ mogrify -format jpg *.png
 $ find . -iregex '.*.jpg' -exec identify '{}' -format "%G" \;
 
 -----------------найти фото больше определенного размера в мб и пережать?
-find -iname '*.jpg' -size +1M -exec mogrify -geometry 50%x50% {} \;
+$ find -iname '*.jpg' -size +1M -exec mogrify -geometry 50%x50% {} \;
 
+-----------------Замена белого фона прозрачным
+$ find . -iname '*.jpg' -exec mogrify -format png -quality 100 {} \;
+$ find . -iname '*.png' -exec convert {} -fuzz 20% -fill white -draw 'color 5,5 floodfill' -quality 100 {} \;
+$ find . -iname '*.png' -exec convert {} -transparent white {} \;
+$ find . -iname '*.png' -exec convert {} -define convolve:scale='100!,100%' -morphology Convolve 'Log:0x2' {} \;
