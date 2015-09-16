@@ -68,8 +68,6 @@ find -name "*.jpg" -exec convert -resize '250x100^' -gravity center -crop 250x10
 -----------------изминение размеров если картинка больше
 convert src.gif -resize "400x400>" dst.gif
 
-mogrify -format jpg *.png
-
 -----------------отображает информацию о размере файла
 $ find . -iregex '.*.jpg' -exec identify '{}' -format "%G" \;
 
@@ -77,6 +75,8 @@ $ find . -iregex '.*.jpg' -exec identify '{}' -format "%G" \;
 $ find -iname '*.jpg' -size +1M -exec mogrify -geometry 50%x50% {} \;
 
 -----------------Замена белого фона прозрачным
+$ find . -iname '*.jpg' -exec mogrify -fill none -fuzz 1% -draw 'matte 0,0 floodfill' -flop -draw 'matte 0,0 floodfill' -flop -format png {} \;
+или
 $ find . -iname '*.jpg' -exec mogrify -format png -quality 100 {} \;
 $ find . -iname '*.png' -exec convert {} -fuzz 20% -fill white -draw 'color 5,5 floodfill' -quality 100 {} \;
 $ find . -iname '*.png' -exec convert {} -transparent white {} \;
