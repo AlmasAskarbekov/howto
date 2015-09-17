@@ -54,8 +54,12 @@ $ convert -background '#6ad4ff' -fill white -font Impact -pointsize 103 label:' 
 $ convert -background '#6ad4ff' -fill white -font Impact -pointsize 103 label:' ТУТ ' thumb42.jpg
 
 
+
+convert image.jpg -font MyriadPro-BlackSemiCn -pointsize 72 -annotate +10+80 '12 990' -blur 0x5 -fill white -annotate +10+80 '12 990' image1.jpg
+
+
 ####################################################
-$ convert -background '#00000000' -fill '#f13340' -font Impact -pointsize 2900 label:' stock-price  ru ' wm1.png
+$ convert -background '#00000000' -fill '#f13340' -font Impact -pointsize 2900 label:' stock-price ru ' wm1.png
 $ convert -rotate '-4' wm1.png wm_new.png
 
 $ find . -iregex '.*.jpg' -exec composite -dissolve 50% -gravity NorthWest ~/wm.png {} {} \;
