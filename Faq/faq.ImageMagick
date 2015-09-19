@@ -54,8 +54,15 @@ $ convert -background '#6ad4ff' -fill white -font Impact -pointsize 103 label:' 
 $ convert -background '#6ad4ff' -fill white -font Impact -pointsize 103 label:' ТУТ ' thumb42.jpg
 
 
-
-convert image.jpg -font MyriadPro-BlackSemiCn -pointsize 72 -annotate +10+80 '12 990' -blur 0x5 -fill white -annotate +10+80 '12 990' image1.jpg
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:570 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South *.png +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка МАКАРЕНА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append shadow.png
+composite -gravity NorthWest shadow.png 1028003_1.jpg 1028003_1.jpg
+rm shadow*.*
 
 
 ####################################################
