@@ -1,0 +1,55 @@
+#!/bin/bash
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 23000.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 22200.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 18400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 22800.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 23400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 25000.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 55400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 41800.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 72000.png

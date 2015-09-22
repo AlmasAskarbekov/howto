@@ -64,6 +64,14 @@ convert -background none -gravity East shadow0.png shadow.png -append shadow.png
 composite -gravity NorthWest shadow.png 1028003_1.jpg 1028003_1.jpg
 rm shadow*.*
 
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.png +append 23200.png
+
+
 
 ####################################################
 $ convert -background '#00000000' -fill '#f13340' -font Impact -pointsize 2900 label:' stock-price ru ' wm1.png
@@ -72,9 +80,9 @@ $ convert -rotate '-4' wm1.png wm_new.png
 $ find . -iregex '.*.jpg' -exec composite -dissolve 50% -gravity NorthWest ~/wm.png {} {} \;
 
 
-
 -----------------обрезать все изображения до 250x100 отцентровав по центру
-find -name "*.jpg" -exec convert -resize '250x100^' -gravity center -crop 250x100+0+0 {} {} \;
+$ find -name "*.jpg" -exec convert -resize '250x100^' -gravity center -crop 250x100+0+0 {} {} \;
+
 
 -----------------изминение размеров если картинка больше
 convert src.gif -resize "400x400>" dst.gif
@@ -92,3 +100,5 @@ $ find . -iname '*.jpg' -exec mogrify -format png -quality 100 {} \;
 $ find . -iname '*.png' -exec convert {} -fuzz 20% -fill white -draw 'color 5,5 floodfill' -quality 100 {} \;
 $ find . -iname '*.png' -exec convert {} -transparent white {} \;
 $ find . -iname '*.png' -exec convert {} -define convolve:scale='100!,100%' -morphology Convolve 'Log:0x2' {} \;
+-----------------удаляем все лишнее
+$ find -name "*.png" -exec convert -trim {} {} \;
