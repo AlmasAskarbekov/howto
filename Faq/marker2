@@ -1,0 +1,10 @@
+#!/bin/bash
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 1.png
