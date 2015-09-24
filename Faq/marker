@@ -1,33 +1,1351 @@
 #!/bin/bash
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка ЛИМА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k1.png
 rm shadow*.*
 convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
 convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
 convert -background none -gravity South shadow*.* +append shadow.png
-convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Комод' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
-convert -background none -gravity East shadow0.png shadow.png -append 1.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка ИНТЕРО' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k4.png
 rm shadow*.*
 convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
-convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
-convert -background none -gravity South shadow*.* +append shadow.png
-convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кровать ЮНОНА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
-convert -background none -gravity East shadow0.png shadow.png -append 2.png
-rm shadow*.*
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
-convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
-convert -background none -gravity South shadow*.* +append shadow.png
-convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Тумба прикроват (2шт)' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
-convert -background none -gravity East shadow0.png shadow.png -append 3.png
-rm shadow*.*
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
-convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
 convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
 convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
 convert -background none -gravity South shadow*.* +append shadow.png
-convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Шкаф-купе 1470' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
-convert -background none -gravity East shadow0.png shadow.png -append 4.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка РИО' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k7.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка ПЕКИН' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k8.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка ВЕРОНА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k12.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка КАПРИЗ' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k14.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка КАИР' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k15.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка ФЛОРА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k19.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка АЛЬФА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k21.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка ЗОДИАК' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k27.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка БЕТА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k28.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка МАКАРЕНА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k31.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка МАКАРЕНА мдф' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k32.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка САПФИР' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k35.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Прихожая ТАНГО-1,3' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k66.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Прихожая ТАНГО-1,6' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k67.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня КОФЕ-1,6' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k74.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ЛОНДОН-1,6' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k75.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ОРХИДЕЯ-1,6' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k76.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ЯБЛОКО-1,8' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k80.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ПЕРСИК-1,8' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k81.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ЯГОДА-1,8' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k85.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня МЕД-1,8' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k86.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня КАТЯ-2,0' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k87.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня АПЕЛЬСИН-2,0' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k92.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ИНДИГО-2,0' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k93.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ЛОЗА-2,0' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k97.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ШОКОЛАД-2,0' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k98.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня ОЛИВА-2,1' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k100.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Кухня КЛУБНИКА-2,1' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k101.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill '#f04040' -font MyriadPro-Bold -pointsize 42 label:'Шкаф ФИЕСТА 3х створчат' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity West shadow0.png shadow.png -append sh162.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill '#f04040' -font MyriadPro-Bold -pointsize 42 label:'Шкаф ФИЕСТА 4х створчат' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity West shadow0.png shadow.png -append sh166.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill '#f04040' -font MyriadPro-Bold -pointsize 42 label:'Шкаф-купе САКУРА 1140' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity West shadow0.png shadow.png -append sh174.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill '#f04040' -font MyriadPro-Bold -pointsize 42 label:'Шкаф-купе БАСЯ 1300' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity West shadow0.png shadow.png -append sh177.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill '#f04040' -font MyriadPro-Bold -pointsize 42 label:'Шкаф-купе САКУРА 1500' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity West shadow0.png shadow.png -append sh181.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill '#f04040' -font MyriadPro-Bold -pointsize 42 label:'Шкаф-купе МАЭСТРО 1700' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity West shadow0.png shadow.png -append sh186.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 25600.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 30800.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 44200.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 19400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 76600.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 5600.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 18400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 21000.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 30400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 21000.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 12600.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 12800.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 37000.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 33600.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 39200.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 54800.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 6600.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 18000.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 17400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 9000.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 18400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 19400.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 12600.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 43200.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 56000.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append 32600.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка ТУРИН' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append g2010.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка НЕКСТ' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append g2030.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка ПРЕМЬЕРА' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append g2040.png
+rm shadow*.*
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Стенка МИЛАН' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append g2060.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'400×600×300' 209s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 209m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'500×600×300' 210s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 210m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'600×600×300' 211s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 211m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'800×600×300' 212s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 212m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'600×600×300' 213s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 213m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'800×600×300' 214s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 214m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'600×300×300' 215s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 215m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'600×300×300' 216s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 216m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф угловой 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'600×600×600' 217s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 217m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'600×820×440' 218s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 218m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'800×820×440' 219s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 219m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 400 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'400×850×600' 220s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 220m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'500×850×600' 221s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 221m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'600×850×600' 222s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 222m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'600×850×600' 223s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 223m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Пенал 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'400×2082×600' 224s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 224m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'800×850×600' 225s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 225m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'800×850×600' 226s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 226m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол угловой' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -fill gray -font MyriadPro-Bold -pointsize 50 label:'1000×850×600' 227s.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 227m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 233m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 234m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 235m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 236m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 237m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 238m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 239m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 240m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф угловой 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 241m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 242m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 243m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 400 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 244m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 245m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 246m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 247m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Пенал 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 248m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 249m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 250m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол угловой' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 251m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 255m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 256m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 257m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 258m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 259m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 260m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 261m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 262m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф угловой 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 263m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 264m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 265m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 400 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 266m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 267m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 268m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 269m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Пенал 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 270m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 271m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 272m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол угловой' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 273m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 275m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 276m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 277m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 278m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 279m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 280m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 281m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 282m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф угловой 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 283m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 284m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 285m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 400 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 286m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 287m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 288m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 289m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Пенал 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 290m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 291m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 292m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол угловой' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 293m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 296m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:8 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 297m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 298m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 299m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 300m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Витрина 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 301m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 302m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label: -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Газовка витрина 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 303m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:0 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Шкаф угловой 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 304m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 305m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Мойка 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 306m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 400 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 307m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:3 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 500' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 308m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:5 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 309m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:7 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:600 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 600 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 310m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:4 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Пенал 400' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 311m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:200 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 312m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:400 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол 800 комби' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 313m.png
+rm shadow*.*
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:2 -crop 70x91+2+0 shadow1.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 112 label:6 -crop 64x91+1+0 shadow2.png
+convert -background none -fill '#f04040' -font PizzaDude-Stars -pointsize 30 label:t -crop 20x36+0+0 shadow3.png
+convert -background none -fill '#f04040' -font MyriadPro-BlackSemiCn -pointsize 93 label:000 -crop 158x80+2+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill black -font MyriadPro-Bold -pointsize 50 label:'Стол угловой' shadow0.png
+convert -background none -fill none -pointsize 20 label:~ shadow01.png
+convert -background none -gravity Center shadow.png shadow01.png shadow0.png -append 314m.png
+rm shadow*.*
