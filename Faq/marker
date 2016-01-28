@@ -7,6 +7,7 @@ convert -background none -fill white -font My-Font-Regular -pointsize 90 label:9
 convert -background none -gravity South shadow*.* +append price.png
 rm shadow*.*
 convert -background none -fill white -font BebasNeueBook -pointsize 100 label:'спальня уют' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+#convert -background none -fill white -font AA-BebasNeue -pointsize 50 label:'2790 x 2000 x 425' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
 convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 33 label:'Шкаф 4х ств., кровать 160, комод, 2 тумбы' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
 convert -background none -gravity West shadow*.* -append k0.png
 rm shadow*.*
