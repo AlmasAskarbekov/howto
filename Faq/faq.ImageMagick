@@ -73,3 +73,5 @@ $ find . -iname '*.png' -exec convert {} -transparent white {} \;
 $ find . -iname '*.png' -exec convert {} -define convolve:scale='100!,100%' -morphology Convolve 'Log:0x2' {} \;
 -----------------удаляем все лишнее
 $ find -name "*.png" -exec convert -trim {} {} \;
+-----------------поменять черное на белое
+$ convert wm.png -colorspace HSI -channel B -level 100,0%  +channel -colorspace sRGB wm.png

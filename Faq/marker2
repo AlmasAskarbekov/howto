@@ -1,3 +1,0 @@
-#!/bin/bash
-convert -background none -fill white -font MyriadPro-Bold -pointsize 420 label:'Фабричная мебель - отличного качества' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
-convert -background none -fill white -font MyriadPro-Bold -pointsize 420 label:'по доступным ценам в кратчайшие сроки!' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
