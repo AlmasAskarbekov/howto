@@ -1,11 +1,13 @@
 #!/bin/bash
 rm *.png
-convert -background none -fill white -font Fira-Sans-Bold -pointsize 160 label:'avito.ru/100k' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage wm.png
-convert -background '#f13340' -fill white -font My-Font-Regular -pointsize 420 label:'ФАБРИЧНАЯ' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
-convert -background '#f13340' -fill white -font My-Font-Regular -pointsize 50 label:' ' shadow1.png
-convert -background '#f13340' -fill white -font My-Font-Regular -pointsize 660 label:'МЕБЕЛЬ' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow.png
+convert -background none -fill white -font Fira-Sans-Bold -pointsize 418 label:'avito.ru/100k' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage wm.png
+convert -background none -fill white -font My-Font-Regular -pointsize 420 label:'ФАБРИЧНАЯ ' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -fill white -font My-Font-Regular -pointsize 50 label:' ' shadow1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 660 label:'МЕБЕЛЬ ' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow.png
 convert -background none -gravity Center shadow0.png shadow1.png shadow.png -append logo.png
+# STAR
+#convert -background none -fill white -font PizzaDude-Stars -pointsize 300 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 230x230+0+0 star.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 300 label:t star.png
+#convert -background none -fill white -font My-Font-Regular -pointsize 420 label:'Отличного качества' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage ban1.png
+#convert -background none -fill white -font My-Font-Regular -pointsize 420 label:'по доступным ценам в кратчайшие сроки!' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage ban2.png
 rm shadow*.*
-convert -background none -fill '#f13340' -font PizzaDude-Stars -pointsize 300 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 230x360+7+0 star.png
-convert -background none -fill white -font MyriadPro-Bold -pointsize 420 label:'Фабричная мебель - отличного качества' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage ban1.png
-convert -background none -fill white -font MyriadPro-Bold -pointsize 420 label:'по доступным ценам в кратчайшие сроки!' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage ban2.png

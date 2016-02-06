@@ -1,13 +1,675 @@
 #!/bin/bash
 rm *.png
-convert -background none -fill white -font My-Font-Regular -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+7+0 shadow1.png
-convert -background none -fill white -font My-Font-Regular -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 shadow2.png
-convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 shadow3.png
-convert -background none -fill white -font My-Font-Regular -pointsize 90 label:967 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 shadow4.png
-convert -background none -gravity South shadow*.* +append price.png
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'милан' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3000 x 2046 x 446' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1600 х 970' shadow3.png
+convert -background none -gravity West shadow*.* -append 101.png
 rm shadow*.*
-convert -background none -fill white -font BebasNeueBook -pointsize 100 label:'спальня уют' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
-#convert -background none -fill white -font AA-BebasNeue -pointsize 50 label:'2790 x 2000 x 425' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
-convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 33 label:'Шкаф 4х ств., кровать 160, комод, 2 тумбы' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
-convert -background none -gravity West shadow*.* -append k0.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:300 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 102.png
+rm label*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'макарена' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2790 x 2000 x 425' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 868 х 592' shadow3.png
+convert -background none -gravity West shadow*.* -append 99.png
 rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 100.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'макарена комби' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2790 x 2000 x 425' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 868 х 592' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 103.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 70x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 104.png
+rm label*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'макарена комби' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2790 x 2000 x 425' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 868 х 592' shadow3.png
+convert -background none -gravity West shadow*.* -append 103-1.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 70x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 104-1.png
+rm label*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'макарена мдф' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2790 x 2000 x 425' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 868 х 592' shadow3.png
+convert -background none -gravity West shadow*.* -append 105.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 106.png
+rm label*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'альфа' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2700 x 1900 x 560' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 900 х 743' shadow3.png
+convert -background none -gravity West shadow*.* -append 107.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 70x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:300 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 108.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'интеро' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'1700 x 1700 x 450' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1009 х 774' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 109.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 110.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'лима' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'1500 x 1520 x 440' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1100 х 728' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 111.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 112.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'флора' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2700 x 2100 x 574' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1000 х 824' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 113.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 70x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 114.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'латте' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2300 x 2100 x 426' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1100 х 1178' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 115.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 116.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'бета' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2700 x 1970 x 470' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 886' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 117.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:8 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:000 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 118.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'верона' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2400 x 1862 x 587' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1124 х 932' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 119.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:700 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 120.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'евро' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3000 x 2000 x 570' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1000 х 992' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 121.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 122.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'монако' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3000 x 2000 x 570' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1168 х 917' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 123.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 124.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'некст' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3000 x 2100 x 446' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1800 х 927' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 125.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 126.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'бордо' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3040 x 2200 x 570' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1342 х 926' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 127.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 128.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'атланта' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3534 x 2200 x 570' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 860 х 916' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 129.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 130.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'турин' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3900 x 2000 x 590' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 1019' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 131.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 132.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'премьера' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2700 x 1954 x 540' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1100 х 574' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 133.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 134.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'сапфир' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2800 x 2000 x 426' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 1087' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 135.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 136.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'рио' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2000 x 1642 x 446' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1100 х 804' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 137.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 138.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'каир' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2520 x 1852 x 574' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1062 х 678' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 139.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 140.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'ливерпуль' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3600 x 2250 x 570' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 1016' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 141.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 142.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'виго' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2768 x 1900 x 420' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1384 х 998' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 143.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:990 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 144.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'оливия-1' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'1660 x 1620 x 380' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 750' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 145.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:6 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 146.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'оливия-2' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2550 x 1820 x 380' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 750' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 147.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:0 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 70x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 148.png
+rm label*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'оливия-3' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2750 x 1850 x 480' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1500 х 1000' shadow3.png
+convert -background none -gravity West shadow*.* -append 149.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 150.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'вега-1' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3550 x 2160 x 520' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 151.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 152.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'вега-2' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'4000 x 2160 x 520' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 153.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:4 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 154.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'вега-3' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3550 x 2160 x 520' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 155.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 156.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'вега-4' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'4000 x 2160 x 520' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 157.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:700 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 158.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'фрэнк' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2450 x 1750 x 480' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 159.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 160.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'диско' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2100 x 1820 x 410' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 1000' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 161.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:6 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:300 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 162.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'блюз' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2000 x 1720 x 480' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill white -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 900 х 700' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow3.png
+convert -background none -gravity West shadow*.* -append 163.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:7 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 164.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'валенсия-1' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2750 x 1920 x 480' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill black -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 960 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 165.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 166.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'валенсия-2' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3000 x 1920 x 480' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill black -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 960 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 167.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 168.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'валенсия-3' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'3500 x 1920 x 480' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill black -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 960 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 169.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 170.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'валенсия-5' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2700 x 1920 x 560' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill black -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1120 х 690' shadow3.png
+convert -background none -gravity West shadow*.* -append 171.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:950 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 172.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'валенсия-6' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2700 x 1920 x 480' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1160 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 173.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:2 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:700 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 174.png
+rm label*.*
+#-------------------------------
+convert -background none -fill white -font BebasNeueBold -pointsize 90 label:'валенсия-7' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow1.png
+convert -background none -fill white -font AA-BebasNeue -pointsize 45 label:'2700 x 1920 x 480' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1160 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 175.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:900 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append 176.png
+rm label*.*
+#-------------------------------
+#-------------------------------
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'интеро' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'1700 x 1700 x 450' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1009 х 774' shadow3.png
+convert -background none -gravity West shadow*.* -append 109-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'лима' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'1500 x 1520 x 440' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1100 х 728' shadow3.png
+convert -background none -gravity West shadow*.* -append 111-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'флора' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2700 x 2100 x 574' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1000 х 824' shadow3.png
+convert -background none -gravity West shadow*.* -append 113-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'латте' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2300 x 2100 x 426' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1100 х 1178' shadow3.png
+convert -background none -gravity West shadow*.* -append 115-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'бета' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2700 x 1970 x 470' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 886' shadow3.png
+convert -background none -gravity West shadow*.* -append 117-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'верона' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2400 x 1862 x 587' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1124 х 932' shadow3.png
+convert -background none -gravity West shadow*.* -append 119-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'евро' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3000 x 2000 x 570' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1000 х 992' shadow3.png
+convert -background none -gravity West shadow*.* -append 121-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'монако' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3000 x 2000 x 570' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1168 х 917' shadow3.png
+convert -background none -gravity West shadow*.* -append 123-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'некст' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3000 x 2100 x 446' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1800 х 927' shadow3.png
+convert -background none -gravity West shadow*.* -append 125-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'бордо' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3040 x 2200 x 570' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1342 х 926' shadow3.png
+convert -background none -gravity West shadow*.* -append 127-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'атланта' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3534 x 2200 x 570' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 860 х 916' shadow3.png
+convert -background none -gravity West shadow*.* -append 129-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'турин' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3900 x 2000 x 590' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 1019' shadow3.png
+convert -background none -gravity West shadow*.* -append 131-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'премьера' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2700 x 1954 x 540' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1100 х 574' shadow3.png
+convert -background none -gravity West shadow*.* -append 133-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'сапфир' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2800 x 2000 x 426' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 1087' shadow3.png
+convert -background none -gravity West shadow*.* -append 135-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'рио' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2000 x 1642 x 446' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1100 х 804' shadow3.png
+convert -background none -gravity West shadow*.* -append 137-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'каир' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2520 x 1852 x 574' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1062 х 678' shadow3.png
+convert -background none -gravity West shadow*.* -append 139-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'ливерпуль' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3600 x 2250 x 570' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 1016' shadow3.png
+convert -background none -gravity West shadow*.* -append 141-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'виго' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2768 x 1900 x 420' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1384 х 998' shadow3.png
+convert -background none -gravity West shadow*.* -append 143-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'оливия-1' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'1660 x 1620 x 380' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 750' shadow3.png
+convert -background none -gravity West shadow*.* -append 145-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'оливия-2' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2550 x 1820 x 380' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 750' shadow3.png
+convert -background none -gravity West shadow*.* -append 147-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'оливия-3' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2750 x 1850 x 480' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1500 х 1000' shadow3.png
+convert -background none -gravity West shadow*.* -append 149-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'вега-1' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3550 x 2160 x 520' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' shadow3.png
+convert -background none -gravity West shadow*.* -append 151-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'вега-2' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'4000 x 2160 x 520' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' shadow3.png
+convert -background none -gravity West shadow*.* -append 153-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'вега-3' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3550 x 2160 x 520' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' shadow3.png
+convert -background none -gravity West shadow*.* -append 155-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'вега-4' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'4000 x 2160 x 520' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' shadow3.png
+convert -background none -gravity West shadow*.* -append 157-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'фрэнк' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2450 x 1750 x 480' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1300 х 1000' shadow3.png
+convert -background none -gravity West shadow*.* -append 159-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'диско' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2100 x 1820 x 410' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1200 х 1000' shadow3.png
+convert -background none -gravity West shadow*.* -append 161-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'блюз' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2000 x 1720 x 480' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 900 х 700' shadow3.png
+convert -background none -gravity West shadow*.* -append 163-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'валенсия-1' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2750 x 1920 x 480' shadow2.png
+convert -background none -fill black -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 960 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 165-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'валенсия-2' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3000 x 1920 x 480' shadow2.png
+convert -background none -fill black -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 960 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 167-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'валенсия-3' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3500 x 1920 x 480' shadow2.png
+convert -background none -fill black -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 960 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 169-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'валенсия-5' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2700 x 1920 x 560' shadow2.png
+convert -background none -fill black -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1120 х 690' shadow3.png
+convert -background none -gravity West shadow*.* -append 171-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'валенсия-6' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2700 x 1920 x 480' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1160 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 173-1.png
+rm shadow*.*
+#-------------------------------
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'валенсия-7' shadow1.png
+convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'2700 x 1920 x 480' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 22 label:'Размер под ТВ 1160 х 670' shadow3.png
+convert -background none -gravity West shadow*.* -append 175-1.png
+rm shadow*.*
+#-------------------------------

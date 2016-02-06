@@ -75,3 +75,12 @@ $ find . -iname '*.png' -exec convert {} -define convolve:scale='100!,100%' -mor
 $ find -name "*.png" -exec convert -trim {} {} \;
 -----------------поменять черное на белое
 $ convert wm.png -colorspace HSI -channel B -level 100,0%  +channel -colorspace sRGB wm.png
+####################################################markerSTAR
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x91+7+0 shadow1.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 112 label:9 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 61x91+4+0 shadow2.png
+convert -background none -fill white -font PizzaDude-Stars -pointsize 30 label:t -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 23x36+7+0 shadow3.png
+convert -background none -fill white -font MyriadPro-BlackSemiCn -pointsize 93 label:800 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 153x80+7+0 shadow4.png
+convert -background none -gravity South shadow*.* +append shadow.png
+convert -background none -fill white -font MyriadPro-Bold -pointsize 42 label:'Спальня БАСЯ-1' -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage shadow0.png
+convert -background none -gravity East shadow0.png shadow.png -append k166-10.png
+rm shadow*.*
