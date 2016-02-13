@@ -1,5 +1,18 @@
 #!/bin/bash
 rm *.png
+#-------------------------------Спальня уют
+convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'спальня уют' shadow1.png
+#convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3000 x 2046 x 446' shadow2.png
+convert -background none -fill '#363838' -font HelveticaNeueCyr-Light -pointsize 32 label:'Шкаф 4х ств., кровать 160, комод, 2тумбы' shadow3.png
+convert -background none -gravity West shadow*.* -append yut.png
+rm shadow*.*
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:1 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label1.png
+convert -background none -fill white -font My-Font-Regular -pointsize 112 label:3 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 65x110+4+0 label2.png
+convert -background none -fill white -font My-Font-Regular -pointsize 80 label:. -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 20x0+7+0 label3.png
+convert -background none -fill white -font My-Font-Regular -pointsize 90 label:500 -trim \( +clone -background gray -shadow 100x4+0+0 \) +swap -background none -layers merge +repage -crop 165x95+7+0 label4.png
+convert -background none -gravity South label*.* +append yut1.png
+rm label*.*
+#-------------------------------
 #-------------------------------
 convert -background none -fill '#363838' -font BebasNeueBold -pointsize 90 label:'милан' shadow1.png
 convert -background none -fill '#363838' -font AA-BebasNeue -pointsize 45 label:'3000 x 2046 x 446' shadow2.png
